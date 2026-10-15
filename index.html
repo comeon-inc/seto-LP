@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seto Glass &amp; Pottery: A Private Day with Master Artisans | Balt Kobo</title>
+<meta name="description" content="A private day in Seto, Japan's 1,000-year pottery town. Blow glass and throw pottery with master artisans, see the clay mine and a climbing kiln, and take home four handmade pieces. One group a day, 2–4 guests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kaolin:#EFEEEA; --kaolin-2:#E4E2DC; --ash:#2E2B28; --ash-soft:#5C5853;
+  --iron:#6B4A2E; --glass:#2C6E7A; --ochre:#C9A23A; --line:#CFCCC4; --line-dark:#4A4642;
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px; --sky:#CFE0E3; --sky-ink:#2E2B28;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--kaolin);color:var(--ash);font-family:var(--sans);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--glass)}
+:focus-visible{outline:2px solid var(--glass);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.3;margin:0}
+h2{font-size:clamp(28px,3.4vw,44px);margin-bottom:20px}
+p{margin:0 0 1em}
+section{padding:96px 0}
+.alt{background:var(--kaolin-2)}
+.dark{background:var(--ash);color:var(--kaolin)}
+.dark p,.dark li{color:#D8D5CE}
+.intro{max-width:42em;color:var(--ash-soft);margin-bottom:48px}
+.dark .intro{color:#B9B5AD}
+@media (max-width:760px){section{padding:72px 0}}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(239,238,234,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.site-head .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.brand{text-decoration:none;color:var(--ash);display:flex;flex-direction:column;line-height:1.1}
+.brand b{font-family:var(--serif);font-size:20px;font-weight:800;letter-spacing:.04em}
+.brand small{font-size:11px;color:var(--ash-soft);letter-spacing:.04em}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{color:var(--ash);text-decoration:none;font-size:14px}
+.nav a:hover{color:var(--glass)}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.langs button{font:inherit;font-size:12px;background:none;border:0;padding:6px 10px;cursor:pointer;color:var(--ash-soft)}
+.langs button[aria-pressed="true"]{background:var(--ash);color:var(--kaolin)}
+.btn{display:inline-block;font-family:var(--sans);font-weight:700;text-decoration:none;background:var(--glass);color:#fff;padding:15px 28px;border-radius:2px;font-size:16px;transition:background .2s;border:0;cursor:pointer}
+.btn:hover{background:#21555E}
+.btn.small{padding:9px 16px;font-size:13px}
+.micro{font-size:13px;color:var(--ash-soft);margin-top:10px}
+@media (max-width:1020px){.nav{display:none}.langs{margin-left:auto}}
+@media (max-width:520px){.site-head .btn.small{display:none}}
+
+/* Photo slots */
+.photo{position:relative;overflow:hidden;background:var(--kaolin-2);border-radius:2px}
+.photo>span{position:absolute;right:12px;bottom:10px;font-size:11px;color:var(--ash-soft)}
+.photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.tone-glass{background:linear-gradient(160deg,#3B7F8A,#1F4E57)}
+.tone-clay{background:linear-gradient(160deg,#D9D3C7,#B8AE9C)}
+.tone-fire{background:linear-gradient(160deg,#B8693A,#5A3221)}
+.tone-dusk{background:linear-gradient(160deg,#6E4A44,#2C3448)}
+.tone-glass>span,.tone-fire>span,.tone-dusk>span{color:rgba(255,255,255,.7)}
+
+/* Hero */
+.hero{padding:40px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.kicker{font-size:15px;color:var(--glass);font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,5vw,68px);font-weight:800;line-height:1.12}
+html[lang="ja"] .hero h1{font-size:clamp(32px,4.6vw,62px);line-height:1.35;letter-spacing:.02em}
+html[lang="fr"] .hero h1,html[lang="de"] .hero h1{font-size:clamp(34px,4.4vw,60px)}
+.hero .lead{font-size:18px;max-width:34em;margin:24px 0 28px;color:var(--ash-soft)}
+.facts{list-style:none;margin:0 0 32px;padding:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.facts li{padding:13px 16px 13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts li:first-child{font-family:var(--serif);font-size:22px;font-weight:700}
+.rating{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:14px;color:var(--ash-soft)}
+.stars{color:var(--ochre);letter-spacing:2px;font-size:16px}
+.hero-photos{display:grid;gap:12px}
+.hero .photo{aspect-ratio:3/2}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:28px}.hero-photos{order:-1;grid-template-columns:1fr 1fr;gap:8px}.hero .photo{aspect-ratio:1/1}.facts{grid-template-columns:1fr}}
+
+/* Empathy */
+.empathy .wrap{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:start}
+.empathy h2{font-size:clamp(28px,3.2vw,42px);margin:0}
+.empathy p{color:var(--ash-soft);font-size:18px}
+@media (max-width:860px){.empathy .wrap{grid-template-columns:1fr;gap:24px}}
+
+/* Story */
+.story .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px}
+.story p{max-width:38em;line-height:1.9}
+.story p:last-child{font-family:var(--serif);font-size:20px;color:var(--kaolin);line-height:1.7;margin-top:28px}
+.eras{list-style:none;margin:8px 0 32px;padding:0 0 0 22px;border-left:1px solid #6E6A64}
+.eras li{position:relative;padding:0 0 18px}
+.eras li::before{content:"";position:absolute;left:-27px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--ochre)}
+.eras b{display:block;font-family:var(--serif);font-size:15px;color:var(--ochre);font-weight:700;line-height:1.5}
+.eras span{display:block;color:#D8D5CE;font-size:15px;line-height:1.75}
+.land{grid-column:1/-1;margin:40px 0 0;display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.land figure{margin:0}
+.land .photo{aspect-ratio:auto;height:clamp(280px,36vw,460px)}
+.land figcaption{font-size:14px;color:#B9B5AD;margin-top:12px}
+@media (max-width:760px){.land{grid-template-columns:1fr}.land .photo{height:auto;aspect-ratio:4/3}}
+.chain{list-style:none;padding:0;margin:56px 0 0;display:grid;grid-template-columns:repeat(5,1fr);position:relative;grid-column:1/-1}
+.chain::before{content:"";position:absolute;left:10%;right:10%;top:9px;height:1px;background:#6E6A64}
+.chain li{text-align:center;position:relative;font-family:var(--serif);font-size:17px;color:var(--kaolin)}
+.chain li::before{content:"";display:block;width:19px;height:19px;border-radius:50%;margin:0 auto 14px;background:var(--ash);border:1px solid #9A958D}
+.chain li:first-child::before{background:var(--ochre);border-color:var(--ochre)}
+.chain li:last-child::before{background:var(--kaolin);border-color:var(--kaolin)}
+@media (max-width:860px){.story .wrap{grid-template-columns:1fr;gap:20px}.chain li{font-size:13px}}
+
+/* Video */
+.video-box{position:relative;aspect-ratio:16/9;background:#000;border-radius:2px;overflow:hidden}
+.video-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* Expect / Why */
+.ew{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.ew h2{font-size:clamp(24px,2.6vw,34px);padding-bottom:14px;border-bottom:2px solid var(--glass);margin-bottom:8px}
+.ew .why h2{border-color:var(--iron)}
+.ew ul{list-style:none;margin:0;padding:0}
+.ew li{padding:18px 0;border-bottom:1px solid var(--line)}
+.ew li b{display:block;font-family:var(--serif);font-size:21px;line-height:1.4;margin-bottom:4px}
+.ew li span{color:var(--ash-soft);font-size:15px}
+@media (max-width:860px){.ew{grid-template-columns:1fr;gap:48px}}
+
+/* Day */
+.day-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.sky{position:sticky;top:96px;height:min(calc(100vh - 140px),620px);border-radius:2px;background:var(--sky);color:var(--sky-ink);overflow:hidden;transition:background 1.1s ease,color 1.1s ease}
+.sky .horizon{position:absolute;left:0;right:0;bottom:30%;height:1px;background:currentColor;opacity:.35}
+.sky .ground{position:absolute;left:0;right:0;bottom:0;height:30%;background:currentColor;opacity:.07}
+.sky .orb{position:absolute;width:64px;height:64px;border-radius:50%;left:var(--ox,15%);bottom:var(--oy,40%);transform:translate(-50%,50%);background:var(--orb,#F3E3B5);box-shadow:0 0 60px 10px var(--orb-glow,rgba(243,227,181,.55));transition:left 1.1s ease,bottom 1.1s ease,background 1.1s ease,box-shadow 1.1s ease}
+.sky .clock{position:absolute;left:32px;top:28px;font-family:var(--serif);font-weight:800;font-size:clamp(48px,6vw,88px);line-height:1;font-variant-numeric:tabular-nums}
+.sky .now{position:absolute;left:32px;right:32px;bottom:28px;font-family:var(--serif);font-size:20px;line-height:1.4}
+.stops{list-style:none;margin:0;padding:0}
+.stop{display:grid;grid-template-columns:72px 1fr;gap:20px;padding:34px 0;border-top:1px solid var(--line)}
+.stop:last-child{border-bottom:1px solid var(--line)}
+.stop time{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--ash-soft);padding-top:2px}
+.stop.is-active time{color:var(--glass)}
+.stop h3{font-size:23px;margin-bottom:8px}
+.stop p{color:var(--ash-soft);margin:0}
+.stop .photo{aspect-ratio:3/2;margin-top:18px}
+@media (max-width:860px){
+  .day-grid{grid-template-columns:1fr;gap:0}
+  .sky{top:calc(68px + env(safe-area-inset-top,0px));height:84px;z-index:5;margin:0 -24px}
+  .sky .clock{font-size:34px;top:50%;transform:translateY(-50%);left:24px}
+  .sky .now{left:132px;right:96px;bottom:auto;top:50%;transform:translateY(-50%);font-size:15px}
+  .sky .orb{width:34px;height:34px;left:auto;right:28px;bottom:50%;transform:translateY(50%)}
+  .sky .horizon,.sky .ground{display:none}
+  .stop{grid-template-columns:56px 1fr;gap:14px}.stop h3{font-size:20px}
+}
+
+/* Take home */
+.sub{font-size:22px;margin:0 0 6px}
+.subp{color:var(--ash-soft);margin:0 0 18px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0 0 48px;list-style:none;padding:0}
+.gal li .photo{aspect-ratio:1/1}
+.gal li p{font-family:var(--serif);font-size:16px;margin:12px 0 0}
+@media (max-width:860px){.gal{grid-template-columns:1fr 1fr;gap:8px}.gal li p{font-size:13px}}
+.ba{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 48px;list-style:none;padding:0}
+.ba li .photo{aspect-ratio:1/1}
+.ba li p{font-family:var(--serif);font-size:16px;margin:12px 0 0}
+.take-grid{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:start}
+.take-item{padding:20px 0;border-top:1px solid var(--line)}
+.take-item h3{font-size:21px;margin-bottom:6px}
+.take-item p{color:var(--ash-soft);margin:0}
+.note{font-size:14px;color:var(--ash-soft);border-left:3px solid var(--ochre);padding-left:14px;margin-top:24px}
+.take-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.take-grid .photo{aspect-ratio:4/5}
+@media (max-width:860px){.take-grid{grid-template-columns:1fr}.ba{gap:8px}.ba li p{font-size:13px}}
+
+/* People */
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.person .photo{aspect-ratio:4/5;margin-bottom:20px}
+.person .photo img{object-position:center 20%}
+.team{margin:56px 0 0}
+.team .photo{aspect-ratio:16/9}
+.team .photo img{object-position:center 35%}
+@media (max-width:760px){.team .photo{aspect-ratio:4/3}}
+.team figcaption{font-size:14px;color:var(--ash-soft);margin-top:12px}
+.person h3{font-size:26px}
+.person .role{font-size:14px;color:var(--ash-soft);margin:4px 0 10px}
+.person .years{font-family:var(--serif);font-weight:700;color:var(--iron);margin-bottom:10px}
+.person p{color:var(--ash-soft);font-size:15px}
+.person blockquote{margin:16px 0 0;padding-left:14px;border-left:2px solid var(--glass);font-family:var(--serif);font-size:16px}
+@media (max-width:860px){.people{grid-template-columns:1fr}.person .photo{aspect-ratio:4/3}}
+
+/* Reviews */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.review{background:#fff;padding:16px;border-radius:2px;border:1px solid var(--line)}
+.review img{width:100%;height:auto}
+.review .tr{margin:14px 4px 4px;padding-top:12px;border-top:1px solid var(--line);font-size:15px;color:var(--ash-soft)}
+.review .tr small{display:block;font-size:12px;color:var(--glass);font-weight:700;margin-bottom:4px}
+.review p{margin:10px 0 14px}
+.review small{color:var(--ash-soft);font-size:13px}
+.review-links{margin-top:28px;display:flex;flex-wrap:wrap;gap:24px;font-size:15px}
+@media (max-width:900px){.reviews{grid-template-columns:1fr}}
+
+/* Price */
+.price-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.price-card{background:var(--ash);color:var(--kaolin);padding:40px;border-radius:2px}
+.price-card .amount{font-family:var(--serif);font-size:56px;font-weight:800;line-height:1}
+.price-card .per{color:#B9B5AD;margin:8px 0 24px}
+.price-card dl{margin:0 0 28px}
+.price-card dt{font-size:13px;color:#A9A49C;margin-top:14px}
+.price-card dd{margin:2px 0 0;font-size:15px}
+.price-card .micro{color:#B9B5AD}
+.offer{margin-top:20px;padding:16px;border:1px solid var(--ochre);color:var(--kaolin)}
+.offer b{display:block;font-family:var(--serif);font-size:18px;color:var(--ochre)}
+.inc h3{font-size:20px;margin:0 0 10px}
+.inc ul{margin:0 0 32px;padding-left:1.2em;color:var(--ash-soft)}
+.inc li{margin:4px 0}
+@media (max-width:860px){.price-grid{grid-template-columns:1fr}}
+
+/* Worries */
+.worries{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.worry{padding:24px 0;border-top:1px solid var(--line)}
+.worry h3{font-size:22px;margin-bottom:8px}
+.worry p{color:var(--ash-soft);margin:0}
+@media (max-width:760px){.worries{grid-template-columns:1fr}}
+
+/* Steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:18px;border-top:2px solid var(--glass)}
+.steps li::before{content:counter(s);font-family:var(--serif);font-weight:800;font-size:28px;color:var(--glass);display:block;line-height:1;margin-bottom:10px}
+.steps h3{font-size:20px;margin-bottom:6px}
+.steps p{color:var(--ash-soft);margin:0;font-size:15px}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* Know + cancel */
+.know-grid{display:grid;grid-template-columns:7fr 5fr;gap:64px}
+.know ul{margin:0;padding:0;list-style:none}
+.know li{padding:14px 0 14px 22px;border-top:1px solid var(--line-dark);position:relative;font-size:15px}
+.know li::before{content:"";position:absolute;left:2px;top:24px;width:8px;height:8px;border-radius:50%;background:var(--ochre)}
+.cancel h3{font-size:22px;margin-bottom:16px}
+.cancel ul{list-style:none;margin:0;padding:0}
+.cancel li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line-dark);font-size:15px}
+.know .cancel li{padding-left:0}
+.know .cancel li::before{content:none}
+.cancel li b{font-family:var(--serif);font-size:18px;white-space:nowrap;color:var(--kaolin)}
+@media (max-width:860px){.know-grid{grid-template-columns:1fr;gap:48px}}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);max-width:860px}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font-family:var(--serif);font-size:19px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:16px;font-size:26px;font-family:var(--sans);font-weight:400;color:var(--glass)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--ash-soft);padding-bottom:20px;margin:0;max-width:44em}
+
+/* Book */
+.book{background:var(--glass);color:#fff}
+.book .head{text-align:center;max-width:40em;margin:0 auto 36px}
+.book .head p{color:#DCEAEC}
+.book .micro{color:#DCEAEC}
+.form-frame{max-width:760px;margin:0 auto;background:#fff;border-radius:2px;overflow:hidden}
+.form-frame iframe{display:block;width:100%;height:1500px;border:0}
+.form-fallback{text-align:center}
+.form-fallback .btn{background:var(--kaolin);color:var(--ash)}
+.form-fallback .btn:hover{background:#fff}
+.book .after{text-align:center;font-size:14px;color:#DCEAEC;margin-top:20px}
+
+/* Footer */
+footer{background:var(--ash);color:#B9B5AD;font-size:14px;padding:56px 0 calc(40px + env(safe-area-inset-bottom,0px))}
+footer a{color:var(--kaolin)}
+.foot-grid{display:grid;grid-template-columns:7fr 5fr;gap:48px}
+.orgs{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:760px){.orgs{grid-template-columns:1fr;gap:24px}}
+footer h3{font-size:16px;color:var(--kaolin);margin-bottom:10px}
+footer p{margin:0 0 8px}
+footer details summary{cursor:pointer;color:var(--kaolin);margin-bottom:8px}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px}
+footer .copy{margin-top:40px;font-size:12px}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* Mobile CTA */
+.mbar{display:none}
+@media (max-width:520px){
+  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(239,238,234,.96);border-top:1px solid var(--line);transition:transform .3s}
+  .mbar .btn{display:block;text-align:center}
+  .mbar.hide{transform:translateY(110%)}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+}
+
+/* FAQ chatbot */
+.bot-btn{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:70;width:58px;height:58px;border-radius:50%;border:0;background:var(--glass);color:#fff;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center}
+.bot-btn:hover{background:#21555E}
+.bot-btn svg{width:26px;height:26px}
+.bot{position:fixed;right:24px;bottom:calc(96px + env(safe-area-inset-bottom,0px));z-index:71;width:min(380px,calc(100vw - 32px));height:min(560px,calc(100vh - 140px));background:#fff;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;overflow:hidden}
+.bot[hidden]{display:none}
+.bot-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--ash);color:var(--kaolin)}
+.bot-head b{font-family:var(--serif);font-size:16px}
+.bot-head button{background:none;border:0;color:var(--kaolin);font-size:22px;line-height:1;cursor:pointer;padding:2px 6px}
+.bot-log{flex:1;overflow-y:auto;padding:16px;position:relative;display:flex;flex-direction:column;gap:10px;background:var(--kaolin)}
+.msg{max-width:85%;padding:10px 13px;border-radius:12px;font-size:14px;line-height:1.6}
+.msg.b{background:#fff;color:var(--ash);border-top-left-radius:3px;align-self:flex-start}
+.msg.u{background:var(--glass);color:#fff;border-top-right-radius:3px;align-self:flex-end}
+.msg .btn{margin-top:10px;padding:9px 14px;font-size:13px}
+.bot-chips{max-height:34%;overflow-y:auto;padding:10px 12px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;background:#fff}
+.bot-chips button{font:inherit;font-size:13px;border:1px solid var(--glass);color:var(--glass);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;text-align:left}
+.bot-chips button:hover{background:#EAF3F4}
+.bot-chips button.alt{border-color:var(--ash-soft);color:var(--ash-soft)}
+@media (max-width:520px){
+  .bot-btn{bottom:calc(84px + env(safe-area-inset-bottom,0px));right:16px;width:52px;height:52px}
+  .bot{right:16px;bottom:calc(146px + env(safe-area-inset-bottom,0px));height:min(520px,calc(100vh - 200px))}
+}
+@media (prefers-reduced-motion:no-preference){.bot{animation:botin .2s ease}@keyframes botin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sky,.sky .orb,.mbar{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>Seto, Japan</b></a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ja" title="日本語">JA</button>
+      <button type="button" data-lang="en" title="English">EN</button>
+      <button type="button" data-lang="fr" title="Français">FR</button>
+      <button type="button" data-lang="de" title="Deutsch">DE</button>
+    </div>
+    <a class="btn small" href="#book" data-t="ctaShort"></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero"></section>
+  <section class="empathy alt" id="empathy"></section>
+  <section class="story dark" id="story"></section>
+  <section class="video" id="video" hidden></section>
+  <section class="alt" id="expect"></section>
+  <section class="day" id="day"></section>
+  <section class="alt" id="take"></section>
+  <section id="artisans"></section>
+  <section class="alt" id="reviews"></section>
+  <section id="price"></section>
+  <section class="alt" id="worries"></section>
+  <section id="steps"></section>
+  <section class="dark know" id="know"></section>
+  <section class="faq" id="faq"></section>
+  <section class="book" id="book"></section>
+</main>
+
+<div class="mbar hide"><a class="btn" href="#book" data-t="ctaMain"></a></div>
+<button class="bot-btn" type="button" aria-haspopup="dialog" aria-controls="bot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.9.7c0 1.7-2.4 2.3-2.4 2.3"/><path d="M12 15.5h.01"/></svg></button>
+<div class="bot" id="bot" role="dialog" aria-modal="false" hidden><div class="bot-head"><b class="bot-title"></b><button type="button" class="bot-x">×</button></div><div class="bot-log" aria-live="polite"></div><div class="bot-chips"></div></div>
+<footer id="footer"></footer>
+
+<script>
+/* ============================================================
+   設定：ここを書き換えるだけで反映されます
+   ============================================================ */
+const CONFIG = {
+  FORM_URL: "https://forms.gle/pFaDUH5LvMdZiojq8",          // Googleフォームの共有URL（https://forms.gle/...）
+  FORM_EMBED_URL: "",    // 空のまま＝フォームは別タブで開く。LP内に埋め込む場合は https://docs.google.com/forms/d/e/1FAIpQLSdbhMpFzuuUiZeI61SjbWZp1l6dBb1VoTk5dhBHm4ADMChCqQ/viewform?embedded=true
+  VIDEO_EMBED_URL: "",   // 動画の埋め込みURL（例：https://www.youtube.com/embed/xxxx）。空なら動画欄は非表示
+  SHOW_OFFER: false,     // 開始記念特典を表示するなら true（文言は各言語の offer に）
+  SHOW_INSTAGRAM: false, // 9投稿そろったら true に
+  SHOW_GYG_LINKS: false, // GetYourGuideへのリンクを表示するなら true（料金比較を避けるため現在は非表示）
+  INSTAGRAM_URL: "https://www.instagram.com/thelastkiln/",
+  GYG_GLASS: "https://www.getyourguide.com/seto-l156278/seto-private-glassblowing-workshop-for-beginners-t1144480/",
+  GYG_POTTERY: "https://www.getyourguide.com/seto-l156278/seto-pottery-wheel-experience-kiln-studio-tour-t1158201/",
+  EMAIL: "baltkobo@gmail.com",
+  TEL_INTL: "+81 561-42-6604", TEL_JP: "0561-42-6604", TEL_LINK: "+81561426604",
+  SELLER_TEL_INTL: "+81 52-951-4451", SELLER_TEL_JP: "052-951-4451", SELLER_TEL_LINK: "+81529514451"
+};
+const NAMES = {
+  M: { ja: "李 末竜",   latin: "Lee Malryong" },
+  K: { ja: "亀井 幸一", latin: "Koichi Kamei" },
+  Z: { ja: "水野 雄介", latin: "Yusuke Mizuno" }
+};
+/* 職人さんの言葉（届いたら各言語で入れてください。空欄なら非表示） */
+const MESSAGES = {
+  M: { ja:"", en:"", fr:"", de:"" },
+  K: { ja:"", en:"", fr:"", de:"" },
+  Z: { ja:"", en:"", fr:"", de:"" }
+};
+
+
+/* レビュー（スクショ画像＋原文。alt に原文を入れて読み上げ・検索に対応） */
+const REVIEWS = [
+  ["review-jan.png","Jan, Germany. It was a great experience! Just the two of us with the master and his team. The shipping to our next hotel also went perfectly. The glasses arrived there in one piece. It's amazing how much we were allowed to do ourselves. Really great!"],
+  ["review-demi.png","Demi, Netherlands. It was a wonderful experience to see how locals in Seto preserve and share their pottery tradition. They explained the history clearly and taught me how to create different pieces on the wheel. I highly recommend it to anyone interested in ceramics and this beautiful art form!"],
+  ["review-trami.png","Trami, Norway. We had a really nice pottery experience. The atmosphere was relaxing, and our guide Yasu and the master was fantastic- patient, clear and very encouraging. They made the whole process easy and enjoyable, even for beginners. We really recommend it!"],
+  ["review-mira.png","Mira, Philippines. Loved the experience of actually working a pottery wheel albeit guided by the husband and wife masters in Seto. We liked our work so much that we paid extra just to be able to being all of them back with us. We have to wait 1-2 months but that's okay. We were also able to buy the masters' original works and visited stores and galleries where they were featured. All in all a great experience!"]
+];
+
+/* ============================================================
+   文章データ
+   ============================================================ */
+const C = {
+en:{
+  title:"Seto Glass & Pottery: A Private Day with Master Artisans | Balt Kobo",
+  nav:[["#story","Story"],["#day","The day"],["#artisans","Artisans"],["#price","Price"],["#faq","FAQ"]],
+  ctaShort:"Request a date", ctaMain:"Request your date",
+  hero:{kicker:"Private glassblowing and pottery day, 40 minutes from Nagoya",
+    h1:"From the clay mine<br>to your own hands.",
+    lead:"Spend a day in Seto, Japan's 1,000-year pottery town, with master artisans who rarely open their workshops to visitors. Blow glass, throw pottery on the wheel, pass the mines where the clay comes from, and share dinner with the people who taught you. You go home with four pieces made by your own hands.",
+    facts:["¥66,000 per person","One private group a day, 2–4 guests","Weekdays, 10:00–19:00","Four pieces made by your own hands"],
+    micro:"Takes about a minute. Nothing to pay until we confirm your date.",
+    rating:"Rated 5.0 on a major international booking site for our glass and pottery experiences"},
+  emp:{h:"Most craft classes are an hour long, in a room full of strangers.",
+    p:["You shape something quickly, someone else finishes it, and you never really meet the person who has given their life to the craft.",
+       "This day is the opposite. Your group is the only one. At each stop, the master of that craft teaches or guides you in person, in a working studio, and in the evening they all join you for dinner."]},
+  story:{h:"The town that gave pottery its name",
+    p:["In Japan, everyday ceramics are still called <i>setomono</i>: things from Seto. For more than a thousand years, without a break, this town has been making pottery.", "It all begins with the clay. Long before Japan took its present shape, this area was a basin of lakes and wetlands. Granite washed into the water, and over time the iron leached out, leaving a white clay that is rare anywhere in the world. From it, Seto can make both pottery and porcelain. The same ground yields silica sand for glass, and Seto is said to supply about 70% of the glass sand mined in Japan. The clay mines lie about a ten-minute walk from Owari-Seto Station.", "A town once prosperous enough to build its own railway is now watching that chain grow thin. Aichi's ceramics cooperative once counted more than 1,000 member companies; today around 250 remain. Some say the clay now being mined could run out in about 25 years. Yet Seto is still one of the few places where you can see the whole chain at work, from digging the clay to refining, shaping, firing and selling. A single cup passes through many specialists, from mold makers and glaze makers to painters, kilns and wholesalers, so that the whole town has worked like one great workshop.", "The artisans behind this day opened their workshops for one reason: so that people from around the world can see this craft while it is still alive, and carry a piece of it home."],
+    eras:[["Late Heian period, about 1,000 years ago", "Potters here are said to have begun glazing their wares with the ash of red pine."], ["1500s–1600s", "Pottery flourished with the tea ceremony, and in the Edo period Seto made wares for the Owari Tokugawa, lords of Nagoya Castle."], ["Early 1800s", "Potters began making porcelain from the local white clay."], ["Late 1800s–1900s", "Coffee cups and porcelain figurines were shipped around the world. The second generation of potter Masukichi Kawamoto's family founded the Seto Electric Railway, today's Meitetsu Seto Line. Pottery went by train to Nagoya, by boat along the Hori River to Nagoya Port, and from there across Japan and the world. The town boomed, and <i>setomono</i> became the everyday word for ceramics."], ["1982", "In a pottery town with kilns, firebricks and craftsmen to ask for advice, Balt Kobo opened as Aichi's first independent glass studio."]],
+    land:"Seto's mining landscape. The white clay and silica sand beneath these hills are the raw materials of its pottery and glass.",works:"At a clay works: clay purified by suihi, a washing process that separates out impurities, then pressed to remove water and dried in the sun.",chain:["Mine","Clay works","Shaping","Kiln","Your table"]},
+  video:"See the day",
+  expect:{h:"What you'll do",items:[
+    ["A thousand years in one conversation","Begin with glass master {M} and the story of how a pottery town became a glass town."],
+    ["Make two glass pieces","A glass, bud vase or wind chime by glassblowing, or a pendant by lampworking, in colors and patterns you choose."],
+    ["Clay mines and a pottery works","See Seto's clay mining area from the road, then watch artisans hand-paint at Chikudoen."],
+    ["A surviving climbing kiln","{Z}, eighth-generation heir of Seto Hongyo Kiln, guides you through the kiln and the Seto Mingei Museum."],
+    ["Throw two pieces on the wheel","Choose from a teacup, a plate, a rice bowl or a small bowl."],
+    ["Dinner with the artisans","Local Seto cooking, shared with the makers you met that day."],
+    ["Your work, boxed and shipped","Packed in a paulownia box bearing the masters' signature and seal, with a certificate."]]},
+  why:{h:"Why this day",items:[
+    ["Taught by the masters themselves","Over 45 years in glass, over 50 years at the wheel, and a kiln family in its eighth generation."],
+    ["Your group only","One private group a day. Workshops, meals and transport are yours alone."],
+    ["The whole craft in one town","Mine, clay works, wheel and kiln, all within a short drive. Only Seto still has this."],
+    ["Photos taken for you","A staff member photographs and films your day and sends everything by WhatsApp."],
+    ["Rated 5.0 by past guests","Every review of our glass and pottery experiences on a major international booking site so far is five stars."],
+    ["Nothing broken, ever","In all our international shipments, not a single piece has arrived broken."],
+    ["Families welcome from age 6","Children under 6 can come along free of charge."]]},
+  day:{h:"Your day, hour by hour",intro:"Everything is private to your group. A dedicated vehicle takes you between stops, and the day is guided in English.",stops:[
+    ["10:00","Meet at Owari-Seto Station","Your host meets you at the station. A staff member comes along all day to take photos and video for you."],
+    ["10:15","A conversation with the glass master","{M} has worked with glass for over 45 years and opened Balt Kobo in 1982 as Aichi's first independent glass studio. He explains why a pottery town also became a glass town, starting with the sand under your feet."],
+    ["10:30","Make two glass pieces","With one-to-one guidance at the studio's furnace and burners, you make two pieces: a drinking glass, a bud vase or a wind chime by glassblowing, or a pendant by lampworking over a flame. You pick the colors and patterns yourself, so each piece is one of a kind. The master's wife or another member of the studio team assists you throughout, and a safety briefing comes first.","glass.jpg","fire"],
+    ["12:00","Lunch with the craftsmen","Seto yakisoba, home-cooked at the studio. These steamed noodles, finished in a soy and pork broth, have long been the quick, filling lunch of Seto's craftsmen, and are recognized by Japan's Agency for Cultural Affairs as a “100-Year Food.”"],
+    ["13:00","Past the clay mines to a pottery works","Before setting off, your guide shows you photos of the places you'll pass. From the main road you see Seto's clay mining area, then visit Chikudoen, a family pottery maker since 1912, to watch artisans hand-paint each piece.","chikudoen.jpg","clay"],
+    ["14:00","A surviving climbing kiln","{Z}, eighth-generation heir of Seto Hongyo Kiln, guides you through the Seto Mingei Museum and a climbing kiln that still stands, among the everyday wares admired by Soetsu Yanagi and Bernard Leach.","kiln.jpg","clay"],
+    ["15:00","Two pieces on the wheel","At Tosui, a quiet gallery studio, {K}, a potter with over 50 years at the wheel, guides you as you throw two pieces: a teacup, a plate, a rice bowl or a small bowl.","pottery.jpg","clay"],
+    ["17:00","A special dinner with the artisans","The artists and craftspeople you met today join you for a special dinner of traditional Seto cooking. This is the time for the questions you couldn't ask at the workbench.","dinner.jpg","dusk"],
+    ["19:00","Back at Owari-Seto Station","Your host drops you back at the station, and the day comes to a close."]]},
+  take:{h:"What you take home",intro:"Four pieces made by your own hands. No one else in the world will have the same ones.",
+    gH:"Your glass: two pieces",gP:"Choose two from a pendant (lampwork), a drinking glass, a bud vase or a wind chime (glassblowing). You pick both the colors and the pattern, so no one else in the world will have the same piece.",g:["Pendant on a leather cord", "Drinking glass", "Bud vase", "Colors and patterns of your choice"],bH:"Your pottery: two pieces, from clay to box",
+    ba:["Seto clay, from the mine","Shaped on the wheel","Finished, signed and boxed"],
+    items:[["The same day: your glass pendant","If you choose a pendant, it cools in time to leave with you, finished with a leather cord."],
+      ["About two months later: everything else","Pottery needs drying and two firings. Your pottery and other glass pieces are then packed in a paulownia box bearing the masters' signature and seal and decorated with brush calligraphy by a calligrapher, with a certificate, and sent by EMS."],
+      ["Packed to travel","Every box is packed by hand to survive the journey. In all our international shipments, not a single piece has arrived broken."]],
+    note:"Shipping is paid in cash (yen) on the day and is charged per carton, by weight and destination. All of one guest's pieces fit in a single paulownia box. Shipped on its own, that makes a carton of about 5 kg, roughly ¥9,000–18,000 by EMS. Two guests' boxes going to the same address can share one carton; for three or four, two cartons may be needed. You can send to as many addresses as you like."},
+  people:{h:"The people who will teach you",intro:"Each stage of the day is led by the master of that craft, and all of them join you for dinner.",team:"{M} (second from left) and his wife (right), who usually assists with the glassblowing and cooks lunch, with guests at Balt Kobo.",list:[["M", "Glass artist, founder of Balt Kobo", "Over 45 years in glass", "Since opening Balt Kobo in Seto in 1982, he has spent more than 40 years making glass and teaching it. Over 3,000 visitors a year learn glassblowing and lampwork from him, and his approach of letting guests do as much as possible with their own hands is especially loved by visitors from abroad. From 1988 he spent about two years studying glass in Britain, and back home he started a study group and organized exhibitions and events to plant a glass culture in Seto. One of the people who saw the beginnings of studio glass in Japan, he has deep ties with Seto's potters and kilns. As your host for the day, he connects the worlds of glass and clay.", "lee.jpg"], ["K", "Potter, Tosui; distinguished member of the Seto Ceramic Art Association", "Over 50 years at the wheel", "Selected for the Nitten exhibition in 1974, he has won awards including the runner-up prize at the Chunichi International Ceramics Exhibition (1983), a bronze medal at the International Ceramics Competition Mino (1989) and a gold prize at the Itami Craft Exhibition (1991), and was invited to exhibit at the Faenza International Ceramics Competition in Italy. Today he makes his own work and teaches at his studio, Tosui. As alumni president of Seto's 130-year-old ceramics high school, he also teaches its students. Guests describe him as patient and encouraging, even with complete beginners.", "kamei.jpg"], ["Z", "Eighth-generation heir, Seto Hongyo Kiln", "A kiln family for eight generations", "Born in 1979 into Seto Hongyo Kiln, whose heads take the name Hanjiro Mizuno, he trained under his father, the seventh Hanjiro. He has twice received the Encouragement Prize at the Japan Folk Crafts Museum exhibition (2013, 2017) and lectures at folk craft museums across Japan. In 2022 he opened the Seto Mingei Museum. As a storyteller of Seto's history, he guides you through the museum and the climbing kiln.", "mizuno.jpg"]]},
+  reviews:{h:"What guests say",intro:"Reviews of our glassblowing and pottery experiences from a major international booking site. This full-day tour is new and brings both together.",label:"",tr:[],
+    glass:"Read glassblowing reviews",pottery:"Read pottery reviews"},
+  price:{h:"Price",amount:"¥66,000",per:"per person, tax included",
+    rows:[["Group size","2–4 guests, one private group per day (minimum 2)"],["Children","Ages 6 and up, at the same price as adults. Children under 6 cannot take part but may come along free of charge."],["Payment","By PayPal within 3 days of confirmation. Shipping is paid in cash on the day."]],
+    incH:"Included",inc:["Glassmaking with a master artisan: glassblowing or lampworking (2 pieces)","Pottery on the wheel with a master potter (2 pieces)","View of the clay mining area and pottery works visit","Seto Mingei Museum admission and climbing kiln","Home-cooked lunch (Seto yakisoba)","Special dinner with the artisans (local cuisine)","All transport between stops","Photos and video of your day, sent by WhatsApp","Paulownia box with the masters' signature and seal, and certificate"],
+    excH:"Not included",exc:["Travel to and from Owari-Seto Station","International shipping by EMS: charged per carton by weight and destination. One guest's pieces fit in a single paulownia box; shipped on its own, that makes a carton of about 5 kg, roughly ¥9,000–18,000. Paid in cash on the day","Personal purchases"]},
+  offer:{h:"Opening offer",p:"For our first groups: a special gift from Seto. Ask us for details."},
+  worries:{h:"Common worries, answered",items:[
+    ["Is it worth the price?","Everything for the day is included: two workshops, four pieces, lunch, dinner, museum entry, private transport, photos and a paulownia box with the masters' signature and seal."],
+    ["Is it worth a whole day of my trip?","Seto is about 40 minutes from Nagoya Station. The schedule is set, and a private vehicle takes you between every stop."],
+    ["I'm not creative. Will my pieces turn out well?","No experience is needed. Each master guides you one-to-one and helps you finish every piece properly."],
+    ["Is glassblowing safe?","You get a safety briefing, sign a consent form, and the tour is insured. The master stays at your side at the furnace."]]},
+  steps:{h:"From request to your doorstep",items:[
+    ["Send a request","It takes about a minute, and you'll get a confirmation email right away."],
+    ["We confirm availability","We check with each workshop and reply within 3 business days."],
+    ["Pay by PayPal","Once confirmed, we send a PayPal payment link. Please pay within 3 days to secure your date."],
+    ["Pre-trip email","One week before, we send the meeting details and what to bring."],
+    ["Your day in Seto","On the day we stay in touch by WhatsApp and send your photos and videos the same way."],
+    ["Your box arrives","About two months later, your pieces are shipped by EMS."]]},
+  know:{h:"Know before you go",items:[
+    "Meet at Owari-Seto Station at 10:00. The day ends there at 19:00.",
+    "Weekdays only. Not available on weekends or Japanese public holidays, including Golden Week (late April to early May), or during Obon (mid-August) and the New Year holidays (late December to early January).",
+    "Requests close 20 days before your date, at 18:00 Japan time.",
+    "Ages 6 and up. Children must be tall enough to work safely at the furnace, so please tell us their age and height.",
+    "Wear closed-toe shoes and clothes of natural fibers such as cotton. Clothes may get some clay on them.",
+    "The tour runs rain or shine.",
+    "Tell us about allergies or a vegan diet when you book. We are unable to offer halal meals.",
+    "Hotel pickup is not included. Transport is provided between stops during the tour."],
+    cxH:"Cancellation policy",cx:[["15 or more days before","Free"],["7–14 days before","20%"],["2–6 days before","30%"],["The day before","50%"],["On the day","100%"]]},
+  bot:{"title": "Questions about the tour", "hello": "Hello! Tap a question below and I'll answer right away.", "extra": [["How much does it cost?", "¥66,000 per person, tax included, for a private group of 2–4. Shipping your pieces home by EMS is extra, paid in cash on the day."], ["When is the tour available?", "Weekdays only, 10:00–19:00, one group a day. Not available on weekends or Japanese public holidays, including Golden Week (late April to early May), or during Obon (mid-August) and the New Year holidays (late December to early January). Requests close 20 days before your date."]], "other": "I have another question", "otherA": "Please send it with the request form and choose “Question only.” We'll reply by email within 3 business days.", "book": "Go to the request form", "more": "Anything else?", "open": "Open questions chat", "close": "Close"},
+  faq:{h:"Questions",items:[
+    ["Do I need any experience?","No. Each master guides you one-to-one and helps you finish your pieces."],
+    ["Is glassblowing safe?","The studio works with fire, very hot glass and tools, so you receive a safety briefing and sign a consent form before you start, and the tour is insured. Please wear closed-toe shoes and clothes made of natural fibers such as cotton."],
+    ["Can children join?","Yes, from age 6, as long as they are tall enough to work safely at the furnace, at the same price as adults. Children under 6 cannot take part but may come along free of charge."],
+    ["How much is shipping?","Shipping is charged per carton by weight and destination, and paid in cash on the day. All of one guest's pieces fit in a single paulownia box; shipped on its own, that makes a carton of about 5 kg, roughly ¥9,000–18,000 by EMS. Two boxes going to the same address can share a carton; for three or four, two cartons may be needed. You can send to as many addresses as you like."],
+    ["When will my pieces arrive?","Pottery takes about two months to dry and fire twice. Your box is then shipped by EMS. A glass pendant can go home with you the same day."],
+    ["Can I take photos?","Of course. A staff member also photographs and films your whole day and sends everything to you by WhatsApp."],
+    ["What if it rains?","The tour runs rain or shine, and you travel between stops by private vehicle."],
+    ["How do I get to Owari-Seto Station?","From Sakaemachi Station in central Nagoya, take the Meitetsu Seto Line to its last stop, Owari-Seto. It takes about 40 minutes from Nagoya Station. The line was first built to carry Seto's pottery."],
+    ["Can you pick us up at our hotel?","Hotel pickup is not included. A private vehicle takes you between every stop during the tour."],
+    ["Can you cater to dietary needs?","We can adapt meals for allergies and vegan diets if you tell us when you book. We are unable to offer halal meals."],
+    ["How do I pay?","After we confirm your date, we send a PayPal payment link. Please pay within 3 days. Only shipping is paid in cash on the day."],
+    ["I have another question.","Please use the request form below and choose “Question only.” We'll reply by email."]]},
+  book:{h:"Request your date",p:"One private group a day, weekdays only. Send your preferred date and we'll reply within 3 business days.",micro:"You won't be charged until we confirm your date.",btn:"Open the request form",after:"Have a question instead? Use the same form and choose “Question only.”"},
+  foot:{opH:"Planned and operated by",op:"Balt Kobo<br>3 Nakakiri-cho, Seto, Aichi 489-0042, Japan",slH:"Sold by",sl:"Act-You Travel Co., Ltd.<br>Registered travel agency, Japan Tourism Agency Commissioner Registration No. 1102<br>HP Otsu-dori Bldg. 2F, 3-5-28 Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japan",privH:"Privacy notice",
+    priv:"We use the information you send through the request form (such as names, email, phone number, dates, number of guests, dietary needs and children's ages and heights) only to answer your request and run your tour. We share it only with the workshops and restaurant involved in your day, and we never sell it. To see or delete your information, email us.",
+    gyg:"Our experiences on a booking site",ig:"Instagram"}
+},
+
+ja:{
+  title:"瀬戸 ガラス×陶芸 匠と過ごす完全貸切の一日 | バルト工房",
+  nav:[["#story","ストーリー"],["#day","一日の流れ"],["#artisans","匠の紹介"],["#price","料金"],["#faq","よくある質問"]],
+  ctaShort:"日程をリクエスト", ctaMain:"希望日をリクエストする",
+  hero:{kicker:"名古屋から40分、吹きガラスと陶芸の完全貸切ツアー",
+    h1:"粘土の鉱山から、<br>あなたの手の中へ。",
+    lead:"千年続く焼き物の町・瀬戸で、ふだんは工房を開かない匠たちと過ごす一日。吹きガラスとろくろに挑み、粘土の生まれる場所を巡り、夜は教えてくれた職人たちと食卓を囲みます。自分の手でつくった4つの作品が、旅の証になります。",
+    facts:["1名 66,000円（税込）","1日1組の完全貸切・2〜4名","平日 10:00〜19:00","自分の手でつくる作品4点"],
+    micro:"入力は約1分。日程が確定するまでお支払いは発生しません。",
+    rating:"海外大手旅行予約サイトで評価5.0（吹きガラス・陶芸体験）"},
+  emp:{h:"多くの工芸体験は、見知らぬ人と並ぶ1時間の教室です。",
+    p:["急いで形をつくり、仕上げは誰かが行う。その技に人生を捧げてきた本人と、ゆっくり話すことはほとんどありません。",
+       "この一日は、その反対です。参加するのはあなたのグループだけ。各工程では、その道の匠本人が今も動く工房で指導・案内し、夜の夕食会には匠たちが顔をそろえます。"]},
+  story:{h:"「せともの」の名が生まれた町",
+    p:["日本では今も、日常の焼き物を「せともの」と呼びます。その名のもとになった瀬戸は、千年以上、途切れることなく焼き物をつくり続けてきた町です。", "すべての始まりは土でした。日本列島ができるよりも前、この一帯は湖や湿地のくぼ地でした。そこに流れ込んだ花崗岩から長い年月をかけて鉄分が抜け、世界でも珍しい白い粘土が生まれました。この白い土からは、陶器も磁器もつくれます。同じ大地からはガラスの原料となる珪砂も採れ、国内で採れる珪砂の約7割が瀬戸産とも言われます。粘土の鉱山は、尾張瀬戸駅から歩いて10分ほどの場所に広がっています。", "鉄道を敷くほど栄えた焼き物の町も、今はその営みが少しずつ細くなっています。愛知県陶磁器工業協同組合の組合員は、かつての1,000社超から約250社に。今掘られている粘土も、あと25年ほどで採り尽くされるとも言われています。それでも瀬戸には、土を掘る人から、精製し、形にし、焼き、届ける人まで、焼き物づくりの全工程が今も一つの町にそろっています。器一つにも、原型師、型屋、素地屋、釉薬屋、絵付師、窯元、問屋と多くの専門家が関わり、町全体がひとつの工場のように動いてきました。", "この一日に協力する匠たちが工房を開いた理由は、ひとつです。今も息づくこの技を世界の人に見てもらい、そのかけらを持ち帰ってほしい。"],
+    eras:[["平安時代末期（約1000年前）", "赤松の灰を使った釉薬で、焼き物づくりが始まったと言われています。"], ["戦国〜江戸時代", "茶の湯とともに焼き物が栄え、江戸時代には名古屋城の主・尾張徳川家の器も焼かれました。"], ["江戸時代末期", "地元の白い土から、磁器づくりが始まります。"], ["明治〜昭和", "コーヒーカップや陶磁器の人形が世界へ輸出され、陶工・河本益吉の2代目が、瀬戸電気鉄道（現在の名鉄瀬戸線）を開業。瀬戸物は鉄道で名古屋へ運ばれ、堀川を通って名古屋港へ、そこから日本全国、そして世界へと渡っていきました。町は大いに栄え、「せともの」は焼き物の代名詞になりました。"], ["1982年", "窯も耐火れんがも、相談できる職人もそろう焼き物の町だからこそ、愛知県初の個人ガラス工房「バルト工房」が誕生しました。"]],
+    land:"瀬戸の鉱山の風景。この丘の下に眠る白い粘土と珪砂が、焼き物とガラスの原料になります。",works:"製土工場の風景。水簸（すいひ）で不純物を取り除き、プレス機で水分を抜いた粘土を天日で干します。",chain:["鉱山","製土","成形","焼成","食卓"]},
+  video:"映像で見る一日",
+  expect:{h:"この一日でできること",items:[
+    ["千年の物語から始まる","ガラス職人・{M}との対話から、焼き物の町がガラスの町にもなった理由をたどります。"],
+    ["ガラス作品を2点","グラス・一輪挿し・風鈴（吹きガラス）、ペンダントトップ（ランプワーク）から選び、色も柄も自分で決めます。"],
+    ["粘土鉱山と製陶所","瀬戸の土が生まれる鉱山地帯を車窓から眺め、竹堂園で職人の絵付けを見学します。"],
+    ["現存する登り窯","瀬戸本業窯8代目の{Z}が、登り窯と瀬戸民藝館を案内します。"],
+    ["ろくろで2点","湯呑み、お皿、茶碗、小鉢から選べます。"],
+    ["匠と囲む夕食","その日出会った作り手たちと、瀬戸の郷土料理をいただきます。"],
+    ["作品は桐箱で世界へ","匠の銘（サインと落款）入りの高級桐箱に、作品証明を添えてお届けします。"]]},
+  why:{h:"この体験が選ばれる理由",items:[
+    ["匠本人が教える","ガラス歴45年以上、陶芸歴50年以上の匠と、8代続く窯元の後継者。"],
+    ["あなたのグループだけ","1日1組の完全貸切。工房も食事も移動も、すべて貸切です。"],
+    ["焼き物の全工程がひとつの町に","鉱山、製土、ろくろ、窯がすべて車圏内。今もそろうのは瀬戸だけです。"],
+    ["撮影はスタッフにお任せ","同行スタッフが写真と動画を撮影し、WhatsAppでお送りします。"],
+    ["参加者の評価は5.0","海外大手旅行予約サイトに寄せられた吹きガラスと陶芸体験のレビューは、これまですべて星5つです。"],
+    ["破損は一度もありません","これまでの国際発送で、作品が破損したことは一度もありません。"],
+    ["6歳から家族で","6歳未満のお子様も、同行は無料です。"]]},
+  day:{h:"一日の流れ",intro:"すべて貸切です。移動は専用車、現地のご案内は英語で行います。",stops:[
+    ["10:00","尾張瀬戸駅に集合","駅でお迎えします。スタッフが一日同行し、写真と動画を撮影します。"],
+    ["10:15","ガラス職人との対話","ガラス歴45年以上の{M}は、1982年に愛知県初の個人ガラス工房としてバルト工房を開きました。焼き物の町がなぜガラスの町にもなったのか、足元の砂の話から語ります。"],
+    ["10:30","ガラス作品を2点","工房の炉とバーナーを使い、マンツーマンの指導で2点を制作します。グラス・一輪挿し・風鈴は吹きガラスで、ペンダントトップはバーナーで溶かしてつくるランプワークで。色も柄も自分で選ぶので、世界に一つだけの作品になります。匠の奥様、または工房のスタッフが体験をサポートし、始める前には安全説明があります。","glass.jpg","fire"],
+    ["12:00","職人と昼食","瀬戸のソウルフード「瀬戸焼きそば」を、工房の手づくりで。蒸し麺をしょうゆベースの豚の煮汁で仕上げる、職人たちが昔から食べてきた味で、文化庁の「100年フード」にも選ばれています。"],
+    ["13:00","粘土鉱山を車窓から、製陶所へ","出発前に、これから巡る場所を写真でご説明します。国道沿いから瀬戸焼の原点である粘土鉱山地帯を眺め、大正元年創業の老舗窯元「竹堂園」へ。職人による絵付けの作業を間近で見学します。","chikudoen.jpg","clay"],
+    ["14:00","現存する登り窯","瀬戸本業窯8代目の{Z}が、瀬戸民藝館と現存する登り窯を案内します。柳宗悦やバーナード・リーチが称えた日用の器から、町の歴史を学びます。","kiln.jpg","clay"],
+    ["15:00","ろくろで2点","静かなギャラリー兼工房「陶酔」で、陶芸歴50年以上の{K}の指導のもと、湯呑み、お皿、茶碗、小鉢から2点をつくります。","pottery.jpg","clay"],
+    ["17:00","作家・職人と囲む特別夕食会","この日出会った作家・職人たちと、瀬戸の郷土料理を囲みます。作業台では聞けなかったことを、ゆっくり話せる時間です。","dinner.jpg","dusk"],
+    ["19:00","尾張瀬戸駅で解散","駅までお送りして、一日が終わります。"]]},
+  take:{h:"持ち帰るもの",intro:"自分の手でつくる4つの作品。どれも世界に一つだけです。",
+    gH:"ガラス作品：2点",gP:"ペンダントトップ（ランプワーク）、グラス・一輪挿し・風鈴（吹きガラス）から2点。色も柄も自分で選ぶので、本当に世界に一つだけの作品です。",g:["革ひも付きのペンダントトップ", "グラス", "一輪挿し", "色も柄も自分で選べます"],bH:"陶芸作品：2点（土から桐箱まで）",
+    ba:["鉱山から生まれた瀬戸の土","ろくろで形にした器","焼き上げ、桐箱に収めた完成品"],
+    items:[["当日：ペンダントトップ","ペンダントトップを選んだ方は、革ひもを付けてその日のうちにお渡しします。"],
+      ["約2か月後：そのほかの作品","陶芸作品は乾燥と2度の焼成に約2か月かかります。焼き上がった器とガラス作品は、匠の銘（サインと落款）入りの高級桐箱（側面には書道家による書）に作品証明を添えて収め、EMSで発送します。"],
+      ["海を越えるための梱包","すべての箱を手作業で丁寧に梱包します。これまでの国際発送で、作品が破損したことは一度もありません。"]],
+    note:"送料は当日、現金（日本円）でお支払いいただきます。料金は段ボール1箱ごとに、重さと発送先で決まります。お一人分の作品はすべて桐箱1つに収まり、単独で送る場合は約5kgの1箱で、EMSで約9,000〜18,000円が目安です。同じ住所への発送なら、2人分の桐箱を段ボール1箱にまとめられます（3〜4人分の場合は2箱になることがあります）。発送先は何か所でも指定できます。"},
+  people:{h:"あなたを迎える匠たち",intro:"各工程は、その道の匠が担当して指導・案内します。夜の夕食会には、匠たちが顔をそろえます。",team:"{M}（左から2人目）と、ふだん吹きガラスのサポートと昼食づくりを担う奥様（右端）。参加者のみなさんと。",list:[["M", "ガラス工芸家／バルト工房 主宰", "ガラス歴45年以上", "1982年に瀬戸市でバルト工房を開設して以来、40年以上にわたりガラス制作と体験指導を続けてきました。年間3,000名を超える来訪者に吹きガラスやランプワークを教え、「なるべくお客様自身の手でつくってもらう」スタイルは、海外のゲストからも高く評価されています。1988年から約2年間は英国でガラスを学び、帰国後は仲間と研究会を立ち上げたり、展覧会やイベントを開いたりして、瀬戸にガラス文化の種をまいてきました。日本のガラスアートの草創期を知る一人で、瀬戸の陶芸家や窯元とも深い信頼関係を築いています。この一日のホストとして、ガラスと焼き物の両方の現場をご案内します。", "lee.jpg"], ["K", "陶芸家／陶酔・瀬戸陶芸協会 功労会員", "陶芸歴50年以上", "1974年に日展入選。中日国際陶芸展 準大賞（1983年）、国際陶磁器展美濃 銅賞（1989年）、伊丹クラフト展 金賞（1991年）など受賞多数。イタリアのファエンツァ国際陶芸展にも招待出品しています。現在は工房「陶酔」で作品づくりと陶芸教室を続けながら、創立130年の瀬戸窯業高校（現・瀬戸工科高校）の同窓会長として、在校生の指導も務めています。初心者にも根気強く、励ましながら教えてくれると評判です。", "kamei.jpg"], ["Z", "瀬戸本業窯 八代目後継者", "8代続く窯元の後継者", "1979年、瀬戸本業窯に生まれる。代々「水野半次郎」の名を受け継ぐ家の八代目後継者として、父である七代半次郎に師事。日本民藝館展で奨励賞を2度受賞（2013年・2017年）し、全国の民藝館や美術館で講演も務めています。2022年に「瀬戸・ものづくりと暮らしのミュージアム（瀬戸民藝館）」を開館。瀬戸の歴史の語り部として、民藝館と登り窯を案内します。", "mizuno.jpg"]]},
+  reviews:{h:"参加者の声",intro:"海外大手旅行予約サイトに寄せられた、吹きガラス体験と陶芸体験のレビューです。この一日ツアーは、その2つをひとつにした新しい体験です。",label:"日本語訳",tr:["素晴らしい体験でした！私たち2人だけで、匠とそのチームと過ごせました。次のホテルへの配送も完璧で、グラスは割れずに届きました。自分たちでこんなに多くのことをやらせてもらえるなんて驚きです。本当に最高でした！","瀬戸の人々が陶芸の伝統を守り、伝えている様子を見られて、素晴らしい体験でした。歴史をわかりやすく説明してくれ、ろくろでさまざまな作品のつくり方を教えてくれました。陶芸やこの美しい芸術に興味がある人に、心からおすすめします！","とても素敵な陶芸体験でした。落ち着いた雰囲気で、ガイドのYasuさんと先生は最高でした。根気強く、説明がわかりやすく、たくさん励ましてくれました。初心者でも、すべての工程を簡単に楽しめました。本当におすすめです！","瀬戸の陶芸家ご夫妻に教わりながら、実際にろくろを体験できて最高でした。作品がとても気に入ったので、追加料金を払って全部持ち帰ることにしました。1〜2か月待ちますが問題ありません。先生方のオリジナル作品も購入でき、作品が並ぶお店やギャラリーも訪れました。本当に素晴らしい体験でした！"],
+    glass:"吹きガラス体験のレビューを見る",pottery:"陶芸体験のレビューを見る"},
+  price:{h:"料金",amount:"66,000円",per:"1名あたり（税込）",
+    rows:[["人数","2〜4名、1日1組の完全貸切（最少催行2名）"],["お子様","6歳から参加でき、料金は大人と同じです。6歳未満のお子様は体験に参加できませんが、同行は無料です。"],["お支払い","予約確定後3日以内にPayPalでお支払いください。送料のみ当日現金払いです。"]],
+    incH:"料金に含まれるもの",inc:["匠によるガラス制作体験：吹きガラス・ランプワーク（2点）","匠によるろくろ陶芸体験（2点）","粘土鉱山地帯の車窓見学と製陶所の見学","瀬戸民藝館入館料と登り窯の見学","工房手づくりの昼食（瀬戸焼きそば）","作家・職人と囲む特別夕食会（郷土料理）","行程中の専用車での移動","当日の写真・動画（WhatsAppでお送りします）","匠の銘入り高級桐箱・作品証明"],
+    excH:"料金に含まれないもの",exc:["尾張瀬戸駅までの交通費","EMS国際発送料：段ボール1箱ごとに、重さと発送先で決まります。お一人分の作品は桐箱1つに収まり、単独で送る場合は約5kgの1箱で約9,000〜18,000円が目安です。当日現金払い","個人的な購入品"]},
+  offer:{h:"開始記念特典",p:"最初のお客様に、瀬戸からの特別な贈り物をご用意しています。詳しくはお問い合わせください。"},
+  worries:{h:"よくある不安に、お答えします",items:[
+    ["料金に見合う価値はある？","2つの工房での体験、作品4点、昼食と夕食、民藝館の入館料、専用車での移動、写真と動画、匠の銘入り桐箱まで、一日に必要なものはすべて含まれています。"],
+    ["旅行中の丸一日を使う価値はある？","瀬戸は名古屋駅から約40分。行程は決まっており、すべての移動は専用車です。"],
+    ["不器用でも、ちゃんとした作品になる？","経験は不要です。各工程の匠がマンツーマンで指導し、最後まで仕上げを支えます。"],
+    ["吹きガラスは危なくない？","安全説明と同意書へのご署名をお願いし、保険にも加入しています。炉の前では匠がそばで見守ります。"]]},
+  steps:{h:"お申し込みから作品が届くまで",items:[
+    ["リクエストを送信","入力は約1分。送信後すぐに受付メールが届きます。"],
+    ["空き状況のご連絡","各工房に確認し、3営業日以内に予約の可否をお知らせします。"],
+    ["PayPalでお支払い","予約確定後、PayPalの支払いリンクをお送りします。3日以内のお支払いで日程が確保されます。"],
+    ["事前案内メール","ツアーの1週間前に、集合場所や持ち物をご案内します。"],
+    ["瀬戸での一日","当日の連絡はWhatsAppで行い、写真と動画も同じくWhatsAppでお送りします。"],
+    ["作品のお届け","約2か月後、作品をEMSで発送します。"]]},
+  know:{h:"ご参加の前に",items:[
+    "尾張瀬戸駅に10:00集合、同駅で19:00解散です。",
+    "平日のみの催行です。土日祝日（GW〈4月末〜5月初め〉を含む）と、お盆（8月中旬）、年末年始（12月末〜1月初め）は除きます。",
+    "お申し込みはツアー日の20日前の18:00までです。",
+    "6歳から参加できます。火を扱うため、作業台に安全に届く身長が必要です。お子様の年齢と身長をお知らせください。",
+    "つま先の覆われた靴と、綿などの天然素材の服でお越しください。土で汚れることがあります。",
+    "雨天でも催行します。",
+    "アレルギーやヴィーガン食はお申し込み時にお知らせください。ハラールには対応しておりません。",
+    "ホテル送迎はありません。行程中の移動は専用車でご案内します。"],
+    cxH:"取消料",cx:[["ツアー日の15日以上前","無料"],["ツアー日の7〜14日前","20%"],["ツアー日の2〜6日前","30%"],["ツアー前日","50%"],["ツアー当日","100%"]]},
+  bot:{"title": "ツアーについてのご質問", "hello": "こんにちは。下の質問を押すと、すぐにお答えします。", "extra": [["料金はいくらですか？", "1名66,000円（税込）、2〜4名の完全貸切です。作品のEMS送料は別途、当日現金でお支払いいただきます。"], ["いつ参加できますか？", "平日のみ、10:00〜19:00、1日1組です。土日祝日（GW〈4月末〜5月初め〉を含む）と、お盆（8月中旬）、年末年始（12月末〜1月初め）は除きます。お申し込みはツアー日の20日前までです。"]], "other": "ほかの質問をしたい", "otherA": "予約フォームで「質問のみ」を選んでお送りください。3営業日以内にメールでお答えします。", "book": "予約フォームへ", "more": "ほかに知りたいことはありますか？", "open": "質問チャットを開く", "close": "閉じる"},
+  faq:{h:"よくある質問",items:[
+    ["経験がなくても参加できますか？","はい。各工程の匠がマンツーマンで指導し、最後まで仕上げを支えます。"],
+    ["吹きガラスは安全ですか？","火や高温のガラス、工具を扱うため、開始前に安全説明と同意書へのご署名をお願いしています。保険にも加入しています。つま先の覆われた靴と、綿などの天然素材の服でお越しください。"],
+    ["子どもも参加できますか？","6歳から、作業台に安全に届く身長があれば参加でき、料金は大人と同じです。6歳未満のお子様は体験に参加できませんが、同行は無料です。"],
+    ["送料はいくらですか？","送料は段ボール1箱ごとに、重さと発送先で決まり、当日現金でお支払いいただきます。お一人分の作品はすべて桐箱1つに収まり、単独で送る場合は約5kgの1箱で、EMSで約9,000〜18,000円が目安です。同じ住所への発送なら、2人分の桐箱を段ボール1箱にまとめられます（3〜4人分の場合は2箱になることがあります）。発送先は何か所でも指定できます。"],
+    ["作品はいつ届きますか？","陶芸作品は乾燥と2度の焼成に約2か月かかり、その後EMSで発送します。ペンダントトップは当日お持ち帰りいただけます。"],
+    ["写真は撮れますか？","もちろんです。同行スタッフも一日の様子を写真と動画で撮影し、WhatsAppでお送りします。"],
+    ["雨の日はどうなりますか？","雨天でも催行します。移動は専用車です。"],
+    ["尾張瀬戸駅へはどう行けばいいですか？","名古屋の中心部・栄町駅から名鉄瀬戸線に乗り、終点の尾張瀬戸駅で下車します。名古屋駅からは約40分です。この路線は、もともと瀬戸の焼き物を運ぶために開業した鉄道です。"],
+    ["ホテルまで送迎してもらえますか？","ホテル送迎はありません。行程中の移動は専用車でご案内します。"],
+    ["食事制限に対応できますか？","アレルギーやヴィーガン食は、お申し込み時にお知らせいただければ対応します。ハラールには対応しておりません。"],
+    ["支払い方法は？","予約確定後にPayPalの支払いリンクをお送りします。3日以内にお支払いください。送料のみ当日現金払いです。"],
+    ["ほかにも質問があります。","下のフォームで「質問のみ」を選んでお送りください。メールでお答えします。"]]},
+  book:{h:"希望日をリクエスト",p:"1日1組、平日のみの受け入れです。ご希望の日程をお送りいただければ、3営業日以内にお返事します。",micro:"日程が確定するまで、お支払いは発生しません。",btn:"リクエストフォームを開く",after:"ご質問だけの場合も、同じフォームで「質問のみ」を選んでお送りください。"},
+  foot:{opH:"企画・実施",op:"バルト工房<br>〒489-0042 愛知県瀬戸市仲切町3",slH:"販売元",sl:"株式会社アクト・ユートラベル<br>観光庁長官登録旅行業 第1102号<br>〒460-0003 愛知県名古屋市中区錦3-5-28<br>HP大津通ビル2F",privH:"個人情報の取り扱い",
+    priv:"リクエストフォームでお送りいただいた情報（お名前、メールアドレス、電話番号、日程、人数、食事制限、お子様の年齢・身長など）は、お問い合わせへの回答とツアーの実施のためだけに使用します。当日関わる工房と飲食店以外に提供することはなく、販売することもありません。情報の確認や削除をご希望の場合は、メールでご連絡ください。",
+    gyg:"旅行予約サイトの体験ページ",ig:"Instagram"}
+},
+
+fr:{
+  title:"Seto, verre et céramique : une journée privée avec des maîtres artisans | Balt Kobo",
+  nav:[["#story","Le récit"],["#day","La journée"],["#artisans","Les artisans"],["#price","Tarif"],["#faq","FAQ"]],
+  ctaShort:"Demander une date", ctaMain:"Demander votre date",
+  hero:{kicker:"Journée privée de soufflage de verre et de céramique, à 40 minutes de Nagoya",
+    h1:"De la mine d'argile<br>jusqu'à vos mains.",
+    lead:"Passez une journée à Seto, ville de la céramique depuis mille ans, avec des maîtres artisans qui ouvrent rarement leurs ateliers. Soufflez le verre, tournez l'argile, longez les mines d'où elle vient, puis partagez le dîner avec ceux qui vous ont appris. Vous repartez avec quatre pièces faites de vos mains.",
+    facts:["66 000 ¥ par personne","Un seul groupe privé par jour, 2 à 4 personnes","En semaine, de 10 h à 19 h","Quatre pièces faites de vos mains"],
+    micro:"Environ une minute. Rien à payer avant la confirmation de votre date.",
+    rating:"Noté 5,0 sur un grand site international de réservation pour nos ateliers de verre et de céramique"},
+  emp:{h:"La plupart des ateliers d'artisanat durent une heure, dans une salle remplie d'inconnus.",
+    p:["On façonne vite, quelqu'un d'autre termine la pièce, et l'on ne rencontre jamais vraiment la personne qui a consacré sa vie à ce savoir-faire.",
+       "Cette journée est tout l'inverse. Votre groupe est le seul. À chaque étape, le maître de cet art vous enseigne ou vous guide en personne, dans un atelier en activité, et le soir, tous vous rejoignent pour le dîner."]},
+  story:{h:"La ville qui a donné son nom à la céramique",
+    p:["Au Japon, la vaisselle du quotidien s'appelle encore <i>setomono</i> : « les choses de Seto ». Depuis plus de mille ans, sans interruption, cette ville fabrique de la céramique.", "Tout commence par l'argile. Bien avant que l'archipel japonais ne prenne sa forme actuelle, la région était une cuvette de lacs et de marais. Le granite s'y est déposé et, avec le temps, le fer s'en est échappé, laissant une argile blanche rare dans le monde. Elle permet à Seto de produire aussi bien de la poterie que de la porcelaine. Le même sol fournit du sable siliceux, et Seto fournirait environ 70 % du sable à verre extrait au Japon. Les mines d'argile se trouvent à une dizaine de minutes à pied de la gare d'Owari-Seto.", "La ville, jadis assez prospère pour construire son propre chemin de fer, voit aujourd'hui cette chaîne s'amenuiser. La coopérative céramique d'Aichi comptait autrefois plus de 1 000 entreprises membres ; il en reste environ 250. Certains estiment que l'argile exploitée aujourd'hui pourrait être épuisée d'ici 25 ans environ. Seto reste pourtant l'un des rares endroits où l'on peut voir toute la chaîne à l'œuvre, de l'extraction de l'argile à l'affinage, au façonnage, à la cuisson et à la vente. Une simple tasse passe entre les mains de nombreux spécialistes, mouleurs, fabricants d'émaux, peintres, fours et grossistes, si bien que toute la ville a fonctionné comme un seul grand atelier.", "Les artisans de cette journée ont ouvert leurs ateliers pour une seule raison : que des visiteurs du monde entier puissent voir ce savoir-faire tant qu'il est vivant, et en emporter un fragment."],
+    eras:[["Fin de l'époque de Heian, il y a environ 1 000 ans", "On dit que les potiers d'ici commencèrent à émailler leurs pièces avec la cendre de pin rouge."], ["XVIe–XVIIe siècles", "La céramique prospère avec la cérémonie du thé ; à l'époque d'Edo, Seto produit pour les Tokugawa d'Owari, seigneurs du château de Nagoya."], ["Début du XIXe siècle", "Les potiers commencent à fabriquer de la porcelaine avec l'argile blanche locale."], ["Fin du XIXe et XXe siècle", "Tasses à café et figurines en porcelaine partent dans le monde entier. La deuxième génération de la famille du potier Masukichi Kawamoto fonde le chemin de fer électrique de Seto, l'actuelle ligne Meitetsu Seto. La céramique part en train jusqu'à Nagoya, puis en bateau sur la rivière Hori jusqu'au port de Nagoya, et de là vers tout le Japon et le monde. La ville prospère, et <i>setomono</i> devient le mot courant pour la vaisselle."], ["1982", "Dans une ville de potiers, avec ses fours, ses briques réfractaires et ses artisans prêts à conseiller, Balt Kobo ouvre ses portes : premier atelier de verre indépendant d'Aichi."]],
+    land:"Le paysage minier de Seto. L'argile blanche et le sable siliceux de ces collines sont les matières premières de sa céramique et de son verre.",works:"Dans une usine de préparation d'argile : l'argile, purifiée par <i>suihi</i> (un lavage qui sépare les impuretés) puis pressée pour en retirer l'eau, sèche au soleil.",chain:["La mine","L'affinage","Le façonnage","La cuisson","Votre table"]},
+  video:"La journée en images",
+  expect:{h:"Au programme",items:[
+    ["Mille ans en une conversation","Commencez avec le maître verrier {M} et l'histoire d'une ville de potiers devenue aussi ville du verre."],
+    ["Créez deux pièces en verre","Verre, soliflore ou carillon en verre soufflé, ou pendentif façonné à la flamme, aux couleurs et motifs de votre choix."],
+    ["Mines d'argile et manufacture","Apercevez depuis la route la zone d'extraction d'argile de Seto, puis observez la peinture à la main chez Chikudoen."],
+    ["Un four grimpant encore debout","{Z}, huitième génération du four Seto Hongyo, vous fait découvrir le four et le musée Seto Mingei."],
+    ["Tournez deux pièces","Au choix : tasse à thé, assiette, bol à riz ou petit bol."],
+    ["Dîner avec les artisans","Cuisine locale de Seto, partagée avec les artisans rencontrés dans la journée."],
+    ["Vos pièces, emballées et expédiées","Dans une boîte en paulownia portant la signature et le sceau des maîtres, avec un certificat."]]},
+  why:{h:"Pourquoi cette journée",items:[
+    ["Enseigné par les maîtres eux-mêmes","Plus de 45 ans de verre, plus de 50 ans au tour, et une famille de potiers à sa huitième génération."],
+    ["Votre groupe uniquement","Un seul groupe privé par jour : ateliers, repas et trajets rien que pour vous."],
+    ["Tout l'artisanat dans une seule ville","Mine, affinage, tour et four, à quelques minutes de route. Seule Seto réunit encore tout cela."],
+    ["Les photos, on s'en occupe","Un membre de l'équipe photographie et filme votre journée, puis vous envoie tout par WhatsApp."],
+    ["Noté 5,0 par nos visiteurs","Tous les avis laissés sur un grand site international de réservation pour nos ateliers de verre et de céramique sont, à ce jour, cinq étoiles."],
+    ["Jamais une pièce cassée","Sur tous nos envois internationaux, aucune pièce n'est jamais arrivée cassée."],
+    ["En famille dès 6 ans","Les enfants de moins de 6 ans peuvent vous accompagner gratuitement."]]},
+  day:{h:"Votre journée, heure par heure",intro:"Tout est privatisé pour votre groupe. Un véhicule dédié assure les trajets, et la visite se déroule en anglais.",stops:[
+    ["10:00","Rendez-vous à la gare d'Owari-Seto","Votre hôte vous accueille à la gare. Un membre de l'équipe vous accompagne toute la journée pour prendre photos et vidéos."],
+    ["10:15","Rencontre avec le maître verrier","{M} travaille le verre depuis plus de 45 ans et a ouvert Balt Kobo en 1982, premier atelier de verre indépendant d'Aichi. Il vous explique pourquoi une ville de potiers est aussi devenue une ville du verre, en commençant par le sable sous vos pieds."],
+    ["10:30","Créez deux pièces en verre","Accompagné individuellement devant le four et les chalumeaux de l'atelier, vous réalisez deux pièces : un verre à boire, un soliflore ou un carillon à vent en verre soufflé, ou un pendentif façonné à la flamme (<i>lampwork</i>). Vous choisissez vous-même couleurs et motifs : chaque pièce est unique. L'épouse du maître ou un autre membre de l'atelier vous assiste tout au long, après une consigne de sécurité.","glass.jpg","fire"],
+    ["12:00","Déjeuner avec les artisans","Des yakisoba de Seto, préparés maison à l'atelier. Ces nouilles cuites à la vapeur, finies dans un bouillon de porc au soja, sont depuis longtemps le déjeuner rapide et nourrissant des artisans de Seto, et figurent parmi les « 100-Year Foods » de l'Agence japonaise des affaires culturelles."],
+    ["13:00","Le long des mines d'argile, jusqu'à la manufacture","Avant de partir, votre guide vous présente en photos les lieux que vous allez traverser. Depuis la route principale, vous apercevez la zone d'extraction d'argile de Seto, puis vous visitez Chikudoen, une manufacture familiale fondée en 1912, pour voir les artisans peindre chaque pièce à la main.","chikudoen.jpg","clay"],
+    ["14:00","Un four grimpant encore debout","{Z}, héritier de huitième génération du four Seto Hongyo, vous guide dans le musée Seto Mingei et devant un four grimpant (<i>noborigama</i>) toujours en place, parmi la vaisselle du quotidien admirée par Soetsu Yanagi et Bernard Leach.","kiln.jpg","clay"],
+    ["15:00","Deux pièces au tour","À Tosui, un atelier-galerie paisible, {K}, potier depuis plus de 50 ans, vous guide pour tourner deux pièces : tasse à thé, assiette, bol à riz ou petit bol.","pottery.jpg","clay"],
+    ["17:00","Un dîner d'exception avec les artisans","Les artistes et artisans rencontrés dans la journée vous rejoignent pour un dîner de cuisine traditionnelle de Seto. Le moment de poser les questions qu'on n'a pas pu poser à l'établi.","dinner.jpg","dusk"],
+    ["19:00","Retour à la gare d'Owari-Seto","Votre hôte vous raccompagne à la gare, et la journée s'achève."]]},
+  take:{h:"Ce que vous rapportez",intro:"Quatre pièces faites de vos mains, toutes uniques au monde.",
+    gH:"Votre verre : deux pièces",gP:"Deux pièces au choix : pendentif (travail à la flamme), verre à boire, soliflore ou carillon (verre soufflé). Vous choisissez couleurs et motifs : personne d'autre au monde n'aura la même pièce.",g:["Pendentif sur cordon de cuir", "Verre à boire", "Soliflore", "Couleurs et motifs de votre choix"],bH:"Votre céramique : deux pièces, de l'argile à la boîte",
+    ba:["L'argile de Seto, sortie de la mine","Façonnée au tour","Cuite, signée et mise en boîte"],
+    items:[["Le jour même : votre pendentif en verre","Si vous choisissez un pendentif, il refroidit à temps pour repartir avec vous, monté sur un cordon de cuir."],
+      ["Environ deux mois plus tard : tout le reste","La céramique doit sécher puis passer deux cuissons. Vos céramiques et vos autres pièces en verre sont ensuite placées dans une boîte en paulownia portant la signature et le sceau des maîtres, et ornée de calligraphies d'un calligraphe, avec un certificat, et expédiées par EMS."],
+      ["Un emballage pensé pour le voyage","Chaque boîte est emballée à la main pour supporter le trajet. Sur tous nos envois internationaux, aucune pièce n'est jamais arrivée cassée."]],
+    note:"L'expédition se règle en espèces (yens) le jour même et est facturée par carton, selon le poids et la destination. Toutes les pièces d'une personne tiennent dans une seule boîte en paulownia. Envoyée seule, elle forme un carton d'environ 5 kg, soit environ 9 000 à 18 000 ¥ par EMS. Les boîtes de deux personnes envoyées à la même adresse peuvent partager un carton ; pour trois ou quatre, deux cartons peuvent être nécessaires. Vous pouvez expédier vers autant d'adresses que vous le souhaitez."},
+  people:{h:"Ceux qui vous transmettront leur art",intro:"Chaque étape est menée par le maître de cet art, et tous vous rejoignent pour le dîner.",team:"{M} (deuxième à gauche) et son épouse (à droite), qui assiste habituellement au soufflage du verre et prépare le déjeuner, avec des visiteurs à Balt Kobo.",list:[["M", "Maître verrier, fondateur de Balt Kobo", "Plus de 45 ans de verre", "Depuis l'ouverture de Balt Kobo à Seto en 1982, il crée et enseigne le verre depuis plus de 40 ans. Plus de 3 000 visiteurs par an apprennent auprès de lui le soufflage et le travail à la flamme, et son approche, laisser les visiteurs faire le plus possible de leurs propres mains, est particulièrement appréciée des voyageurs étrangers. À partir de 1988, il a étudié le verre pendant environ deux ans en Grande-Bretagne ; de retour, il a fondé un groupe d'étude et organisé expositions et événements pour faire naître une culture du verre à Seto. Témoin des débuts du verre d'art au Japon, il entretient des liens étroits avec les potiers et les fours de Seto. Votre hôte pour la journée, il fait le lien entre le verre et l'argile.", "lee.jpg"], ["K", "Potier, Tosui ; membre émérite de l'Association de céramique de Seto", "Plus de 50 ans au tour", "Sélectionné au Nitten en 1974, il a notamment reçu le deuxième prix de l'Exposition internationale de céramique Chunichi (1983), une médaille de bronze au Concours international de céramique de Mino (1989) et un prix d'or à l'Exposition d'artisanat d'Itami (1991), et a été invité au Concours international de céramique de Faenza, en Italie. Il crée et enseigne aujourd'hui dans son atelier, Tosui ; président de l'association des anciens élèves du lycée de céramique de Seto, fondé il y a 130 ans, il y enseigne aussi. Ses visiteurs le décrivent comme patient et encourageant, même avec des débutants complets.", "kamei.jpg"], ["Z", "Héritier de huitième génération, four Seto Hongyo", "Une famille de potiers depuis huit générations", "Né en 1979 au four Seto Hongyo, dont les chefs portent le nom de Hanjiro Mizuno, il s'est formé auprès de son père, le septième Hanjiro. Il a reçu deux fois le prix d'encouragement de l'exposition du Musée japonais des arts populaires (2013, 2017) et donne des conférences dans les musées d'artisanat de tout le Japon. En 2022, il a ouvert le musée Seto Mingei. Conteur de l'histoire de Seto, il vous guide dans le musée et devant le four grimpant.", "mizuno.jpg"]]},
+  reviews:{h:"Ce qu'en disent nos visiteurs",intro:"Avis laissés sur un grand site international de réservation pour nos ateliers de soufflage de verre et de céramique. Cette journée complète est nouvelle et réunit les deux.",label:"Traduction",tr:["Une super expérience ! Rien que nous deux avec le maître et son équipe. L'envoi à notre hôtel suivant s'est parfaitement passé : les verres sont arrivés intacts. C'est incroyable tout ce qu'on nous a laissé faire nous-mêmes. Vraiment génial !","Une expérience merveilleuse : voir comment les habitants de Seto préservent et partagent leur tradition céramique. Ils ont expliqué l'histoire clairement et m'ont appris à créer différentes pièces au tour. Je recommande vivement à tous ceux qui s'intéressent à la céramique et à cet art magnifique !","Une très belle expérience de poterie. L'ambiance était détendue, et notre guide Yasu et le maître ont été formidables : patients, clairs et très encourageants. Ils ont rendu tout le processus facile et agréable, même pour des débutants. Nous recommandons vivement !","Nous avons adoré travailler vraiment au tour, guidés par un couple de maîtres potiers de Seto. Nos pièces nous ont tant plu que nous avons payé un supplément pour toutes les rapporter. Il faut attendre un à deux mois, mais ce n'est pas grave. Nous avons aussi pu acheter des œuvres originales des maîtres et visiter des boutiques et galeries qui les exposent. Une super expérience !"],
+    glass:"Lire les avis sur le soufflage de verre",pottery:"Lire les avis sur la céramique"},
+  price:{h:"Tarif",amount:"66 000 ¥",per:"par personne, TTC",
+    rows:[["Taille du groupe","2 à 4 personnes, un seul groupe privé par jour (minimum 2)"],["Enfants","À partir de 6 ans, au même tarif que les adultes. Les enfants de moins de 6 ans ne peuvent pas participer mais peuvent vous accompagner gratuitement."],["Paiement","Par PayPal dans les 3 jours suivant la confirmation. L'expédition se règle en espèces le jour même."]],
+    incH:"Compris",inc:["Création en verre avec un maître artisan : soufflage ou travail à la flamme (2 pièces)","Tournage avec un maître potier (2 pièces)","Vue sur la zone d'extraction d'argile et visite de la manufacture","Entrée au musée Seto Mingei et four grimpant","Déjeuner fait maison (yakisoba de Seto)","Dîner d'exception avec les artisans (cuisine locale)","Tous les trajets entre les étapes","Photos et vidéos de votre journée, envoyées par WhatsApp","Boîte en paulownia avec signature et sceau des maîtres, et certificat"],
+    excH:"Non compris",exc:["Trajet jusqu'à la gare d'Owari-Seto et retour","Expédition internationale par EMS : facturée par carton, selon le poids et la destination. Les pièces d'une personne tiennent dans une seule boîte en paulownia ; envoyée seule, cela fait un carton d'environ 5 kg, soit environ 9 000 à 18 000 ¥. À régler en espèces le jour même","Achats personnels"]},
+  offer:{h:"Offre de lancement",p:"Pour nos premiers groupes : un cadeau spécial de Seto. Contactez-nous pour en savoir plus."},
+  worries:{h:"Vos hésitations, nos réponses",items:[
+    ["Cela vaut-il le prix ?","Tout est compris : deux ateliers, quatre pièces, déjeuner, dîner, entrée au musée, trajets privés, photos et boîte en paulownia portant la signature et le sceau des maîtres."],
+    ["Cela vaut-il une journée entière de mon voyage ?","Seto est à environ 40 minutes de la gare de Nagoya. Le programme est fixé et un véhicule privé vous conduit à chaque étape."],
+    ["Je ne suis pas manuel. Mes pièces seront-elles réussies ?","Aucune expérience n'est nécessaire. Chaque maître vous guide individuellement et vous aide à finir chaque pièce."],
+    ["Le soufflage du verre est-il sans danger ?","Vous recevez une consigne de sécurité, signez un formulaire de consentement, et la visite est assurée. Le maître reste à vos côtés devant le four."]]},
+  steps:{h:"De la demande à votre porte",items:[
+    ["Envoyez une demande","Environ une minute ; vous recevez aussitôt un e-mail de confirmation de réception."],
+    ["Nous confirmons la disponibilité","Nous vérifions auprès de chaque atelier et répondons sous 3 jours ouvrés."],
+    ["Paiement par PayPal","Une fois la date confirmée, nous envoyons un lien PayPal. Réglez sous 3 jours pour garantir votre date."],
+    ["E-mail avant le départ","Une semaine avant, nous envoyons le point de rendez-vous et ce qu'il faut apporter."],
+    ["Votre journée à Seto","Le jour même, nous restons en contact par WhatsApp et vous y envoyons vos photos et vidéos."],
+    ["Votre colis arrive","Environ deux mois plus tard, vos pièces sont expédiées par EMS."]]},
+  know:{h:"Bon à savoir",items:[
+    "Rendez-vous à la gare d'Owari-Seto à 10 h. Fin au même endroit à 19 h.",
+    "En semaine uniquement. Fermé les week-ends et les jours fériés japonais, dont la Golden Week (fin avril à début mai), ainsi qu'à Obon (mi-août) et pendant les fêtes du Nouvel An (fin décembre à début janvier).",
+    "Les demandes sont closes 20 jours avant la date, à 18 h (heure du Japon).",
+    "À partir de 6 ans. Les enfants doivent être assez grands pour travailler en sécurité devant le four : indiquez-nous leur âge et leur taille.",
+    "Portez des chaussures fermées et des vêtements en fibres naturelles, comme le coton. Ils peuvent être tachés d'argile.",
+    "La visite a lieu par tous les temps.",
+    "Signalez allergies ou régime végan lors de la réservation. Nous ne pouvons pas proposer de repas halal.",
+    "Pas de prise en charge à l'hôtel. Les trajets entre les étapes sont assurés pendant la visite."],
+    cxH:"Conditions d'annulation",cx:[["15 jours ou plus avant","Gratuit"],["7 à 14 jours avant","20 %"],["2 à 6 jours avant","30 %"],["La veille","50 %"],["Le jour même","100 %"]]},
+  bot:{"title": "Questions sur la journée", "hello": "Bonjour ! Touchez une question ci-dessous, je vous réponds tout de suite.", "extra": [["Combien cela coûte-t-il ?", "66 000 ¥ par personne, TTC, pour un groupe privé de 2 à 4 personnes. L'expédition de vos pièces par EMS est en supplément, à régler en espèces le jour même."], ["Quand la visite a-t-elle lieu ?", "En semaine uniquement, de 10 h à 19 h, un seul groupe par jour. Fermé les week-ends et les jours fériés japonais, dont la Golden Week (fin avril à début mai), ainsi qu'à Obon (mi-août) et pendant les fêtes du Nouvel An (fin décembre à début janvier). Les demandes sont closes 20 jours avant la date."]], "other": "J'ai une autre question", "otherA": "Envoyez-la via le formulaire en choisissant « Question uniquement ». Nous répondons par e-mail sous 3 jours ouvrés.", "book": "Aller au formulaire", "more": "Autre chose ?", "open": "Ouvrir le chat des questions", "close": "Fermer"},
+  faq:{h:"Questions fréquentes",items:[
+    ["Faut-il de l'expérience ?","Non. Chaque maître vous guide individuellement et vous aide à terminer vos pièces."],
+    ["Le soufflage du verre est-il sans danger ?","L'atelier utilise le feu, du verre très chaud et des outils : vous recevez une consigne de sécurité et signez un formulaire de consentement avant de commencer, et la visite est assurée. Portez des chaussures fermées et des vêtements en fibres naturelles."],
+    ["Les enfants peuvent-ils participer ?","Oui, dès 6 ans, s'ils sont assez grands pour travailler en sécurité devant le four, au même tarif que les adultes. Les moins de 6 ans peuvent vous accompagner gratuitement."],
+    ["Combien coûte l'expédition ?","L'expédition est facturée par carton, selon le poids et la destination, et se règle en espèces le jour même. Toutes les pièces d'une personne tiennent dans une seule boîte en paulownia ; envoyée seule, elle forme un carton d'environ 5 kg, soit environ 9 000 à 18 000 ¥ par EMS. Deux boîtes pour une même adresse peuvent partager un carton ; pour trois ou quatre, deux cartons peuvent être nécessaires. Vous pouvez expédier vers autant d'adresses que vous le souhaitez."],
+    ["Quand recevrai-je mes pièces ?","La céramique sèche et passe deux cuissons, ce qui prend environ deux mois ; votre boîte est ensuite expédiée par EMS. Un pendentif en verre repart avec vous le jour même."],
+    ["Puis-je prendre des photos ?","Bien sûr. Un membre de l'équipe photographie et filme aussi toute votre journée, puis vous envoie tout par WhatsApp."],
+    ["Et s'il pleut ?","La visite a lieu par tous les temps, et les trajets se font en véhicule privé."],
+    ["Comment rejoindre la gare d'Owari-Seto ?","Depuis la gare de Sakaemachi, au centre de Nagoya, prenez la ligne Meitetsu Seto jusqu'à son terminus, Owari-Seto. Comptez environ 40 minutes depuis la gare de Nagoya. Cette ligne a d'abord été construite pour transporter la céramique de Seto."],
+    ["Venez-vous nous chercher à l'hôtel ?","La prise en charge à l'hôtel n'est pas comprise. Un véhicule privé vous conduit entre toutes les étapes."],
+    ["Pouvez-vous adapter les repas ?","Oui pour les allergies et le régime végan, si vous nous prévenez à la réservation. Nous ne pouvons pas proposer de repas halal."],
+    ["Comment payer ?","Après confirmation de votre date, nous envoyons un lien de paiement PayPal, à régler sous 3 jours. Seule l'expédition se paie en espèces le jour même."],
+    ["J'ai une autre question.","Utilisez le formulaire ci-dessous et choisissez « Question uniquement ». Nous vous répondrons par e-mail."]]},
+  book:{h:"Demandez votre date",p:"Un seul groupe privé par jour, en semaine uniquement. Indiquez la date souhaitée : nous répondons sous 3 jours ouvrés.",micro:"Aucun paiement avant la confirmation de votre date.",btn:"Ouvrir le formulaire",after:"Simple question ? Utilisez le même formulaire et choisissez « Question uniquement »."},
+  foot:{opH:"Conception et organisation",op:"Balt Kobo<br>3 Nakakiri-cho, Seto, Aichi 489-0042, Japon",slH:"Vente",sl:"Act-You Travel Co., Ltd.<br>Agence de voyages agréée, enregistrement n° 1102 auprès du commissaire de l'Agence japonaise du tourisme<br>HP Otsu-dori Bldg. 2F, 3-5-28 Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japon",privH:"Protection des données",
+    priv:"Les informations envoyées via le formulaire (noms, e-mail, téléphone, dates, nombre de participants, régime alimentaire, âge et taille des enfants) servent uniquement à répondre à votre demande et à organiser votre visite. Elles ne sont partagées qu'avec les ateliers et le restaurant concernés, et ne sont jamais vendues. Pour les consulter ou les supprimer, écrivez-nous.",
+    gyg:"Nos ateliers sur un site de réservation",ig:"Instagram"}
+},
+
+de:{
+  title:"Seto, Glas und Keramik: ein privater Tag mit Meisterhandwerkern | Balt Kobo",
+  nav:[["#story","Geschichte"],["#day","Der Tag"],["#artisans","Die Meister"],["#price","Preis"],["#faq","FAQ"]],
+  ctaShort:"Termin anfragen", ctaMain:"Wunschtermin anfragen",
+  hero:{kicker:"Privater Tag mit Glasblasen und Töpfern, 40 Minuten von Nagoya",
+    h1:"Von der Tongrube<br>in Ihre Hände.",
+    lead:"Verbringen Sie einen Tag in Seto, seit tausend Jahren eine Stadt der Keramik, mit Meisterhandwerkern, die ihre Werkstätten selten für Besucher öffnen. Blasen Sie Glas, drehen Sie Ton auf der Scheibe, fahren Sie an den Gruben vorbei, aus denen der Ton kommt, und essen Sie am Abend mit den Menschen, die Sie angeleitet haben. Sie nehmen vier Stücke mit, die Sie selbst gemacht haben.",
+    facts:["66.000 ¥ pro Person","Eine private Gruppe pro Tag, 2–4 Personen","Werktags, 10:00–19:00 Uhr","Vier Stücke aus Ihren eigenen Händen"],
+    micro:"Dauert etwa eine Minute. Sie zahlen erst, wenn wir Ihren Termin bestätigt haben.",
+    rating:"Bewertet mit 5,0 auf einer großen internationalen Buchungsplattform für unsere Glas- und Töpferkurse"},
+  emp:{h:"Die meisten Handwerkskurse dauern eine Stunde, in einem Raum voller Fremder.",
+    p:["Man formt schnell etwas, jemand anderes stellt es fertig, und den Menschen, der sein Leben diesem Handwerk gewidmet hat, lernt man nie wirklich kennen.",
+       "Dieser Tag ist das Gegenteil. Ihre Gruppe ist die einzige. An jeder Station leitet oder führt Sie der Meister dieses Handwerks persönlich, in einer echten Werkstatt, und am Abend kommen alle zum gemeinsamen Essen zusammen."]},
+  story:{h:"Die Stadt, die der Keramik ihren Namen gab",
+    p:["In Japan heißt Alltagsgeschirr bis heute <i>setomono</i>, „Dinge aus Seto“. Seit mehr als tausend Jahren wird in dieser Stadt ohne Unterbrechung Keramik hergestellt.", "Alles beginnt mit dem Ton. Lange bevor Japan seine heutige Gestalt annahm, war diese Gegend ein Becken aus Seen und Sümpfen. Granit wurde hineingeschwemmt, und mit der Zeit wurde das Eisen ausgewaschen. Zurück blieb ein weißer Ton, der weltweit selten ist. Aus ihm lassen sich sowohl Töpferware als auch Porzellan herstellen. Derselbe Boden liefert Quarzsand für Glas; etwa 70 % des in Japan geförderten Glassands sollen aus Seto stammen. Die Tongruben liegen etwa zehn Gehminuten vom Bahnhof Owari-Seto entfernt.", "Die Stadt, einst so wohlhabend, dass sie eine eigene Eisenbahn baute, erlebt heute, wie diese Kette dünner wird. Der Keramikverband von Aichi zählte einst über 1.000 Mitgliedsbetriebe, heute sind es rund 250. Manche schätzen, dass der heute abgebaute Ton in etwa 25 Jahren erschöpft sein könnte. Und doch ist Seto einer der wenigen Orte, an denen sich die ganze Kette noch erleben lässt: vom Abbau des Tons über das Aufbereiten, Formen und Brennen bis zum Verkauf. Eine einzige Tasse geht durch die Hände vieler Spezialisten, von Formenbauern und Glasurherstellern bis zu Malern, Brennereien und Großhändlern, sodass die ganze Stadt wie eine große Werkstatt funktioniert hat.", "Die Handwerker dieses Tages öffnen ihre Werkstätten aus einem einzigen Grund: damit Menschen aus aller Welt dieses Handwerk sehen können, solange es lebt, und ein Stück davon mit nach Hause nehmen."],
+    eras:[["Späte Heian-Zeit, vor etwa 1.000 Jahren", "Die Töpfer hier sollen begonnen haben, ihre Ware mit der Asche der Rotkiefer zu glasieren."], ["16.–17. Jahrhundert", "Mit der Teezeremonie blüht die Keramik auf; in der Edo-Zeit fertigt Seto Geschirr für die Owari-Tokugawa, die Herren der Burg Nagoya."], ["Frühes 19. Jahrhundert", "Aus dem heimischen weißen Ton wird erstmals Porzellan hergestellt."], ["Spätes 19. und 20. Jahrhundert", "Kaffeetassen und Porzellanfiguren gehen in alle Welt. Die zweite Generation der Familie des Töpfers Masukichi Kawamoto gründet die Elektrische Eisenbahn Seto, die heutige Meitetsu-Seto-Linie. Die Keramik reist per Bahn nach Nagoya, per Boot über den Hori-Fluss zum Hafen von Nagoya und von dort in ganz Japan und in die Welt. Die Stadt blüht auf, und <i>setomono</i> wird zum Alltagswort für Geschirr."], ["1982", "In einer Töpferstadt mit Brennöfen, Schamottsteinen und Handwerkern, die mit Rat helfen, entsteht Balt Kobo, die erste unabhängige Glaswerkstatt der Präfektur Aichi."]],
+    land:"Setos Bergbaulandschaft. Der weiße Ton und der Quarzsand unter diesen Hügeln sind die Rohstoffe für Keramik und Glas.",works:"In einem Tonwerk: Der Ton wird durch <i>Suihi</i>, ein Schlämmverfahren, von Verunreinigungen befreit, in einer Presse entwässert und dann in der Sonne getrocknet.",chain:["Grube","Aufbereitung","Formen","Brennen","Ihr Tisch"]},
+  video:"Der Tag im Film",
+  expect:{h:"Was Sie erleben",items:[
+    ["Tausend Jahre in einem Gespräch","Beginnen Sie mit Glasmeister {M} und der Geschichte, wie eine Töpferstadt zur Glasstadt wurde."],
+    ["Zwei Glasstücke gestalten","Trinkglas, Blumenvase oder Windspiel aus geblasenem Glas oder ein über der Flamme geformter Anhänger, in Farben und Mustern Ihrer Wahl."],
+    ["Tongruben und Manufaktur","Sehen Sie Setos Tonabbaugebiet von der Straße aus und schauen Sie bei Chikudoen der Handbemalung zu."],
+    ["Ein erhaltener Kletterofen","{Z}, Erbe des Seto-Hongyo-Ofens in achter Generation, führt Sie zum Ofen und durch das Seto-Mingei-Museum."],
+    ["Zwei Stücke auf der Scheibe","Zur Wahl: Teebecher, Teller, Reisschale oder kleine Schale."],
+    ["Abendessen mit den Handwerkern","Regionale Küche aus Seto, gemeinsam mit den Menschen, die Sie an diesem Tag kennengelernt haben."],
+    ["Ihre Stücke, verpackt und verschickt","In einer Paulownia-Box mit Signatur und Siegel der Meister, mit Zertifikat."]]},
+  why:{h:"Warum dieser Tag",items:[
+    ["Von den Meistern selbst angeleitet","Über 45 Jahre Glas, über 50 Jahre an der Töpferscheibe und eine Töpferfamilie in achter Generation."],
+    ["Nur Ihre Gruppe","Eine private Gruppe pro Tag: Werkstätten, Mahlzeiten und Fahrten gehören ganz Ihnen."],
+    ["Das ganze Handwerk in einer Stadt","Grube, Aufbereitung, Scheibe und Ofen, alles nur eine kurze Fahrt entfernt. Das gibt es nur noch in Seto."],
+    ["Fotos übernehmen wir","Ein Teammitglied fotografiert und filmt Ihren Tag und schickt Ihnen alles per WhatsApp."],
+    ["Von Gästen mit 5,0 bewertet","Alle bisherigen Bewertungen unserer Glas- und Töpferkurse auf einer großen internationalen Buchungsplattform haben fünf Sterne."],
+    ["Noch nie etwas zerbrochen","Bei all unseren internationalen Sendungen ist noch kein einziges Stück zerbrochen angekommen."],
+    ["Für Familien ab 6 Jahren","Kinder unter 6 Jahren dürfen kostenlos mitkommen."]]},
+  day:{h:"Ihr Tag, Stunde für Stunde",intro:"Alles ist exklusiv für Ihre Gruppe. Ein eigenes Fahrzeug bringt Sie von Ort zu Ort, die Führung erfolgt auf Englisch.",stops:[
+    ["10:00","Treffpunkt Bahnhof Owari-Seto","Ihr Gastgeber holt Sie am Bahnhof ab. Ein Teammitglied begleitet Sie den ganzen Tag und macht Fotos und Videos für Sie."],
+    ["10:15","Gespräch mit dem Glasmeister","{M} arbeitet seit über 45 Jahren mit Glas und gründete Balt Kobo 1982 als erste unabhängige Glaswerkstatt der Präfektur Aichi. Er erzählt, warum eine Töpferstadt auch zur Glasstadt wurde, angefangen beim Sand unter Ihren Füßen."],
+    ["10:30","Zwei Glasstücke gestalten","In Einzelbetreuung an Ofen und Brennern der Werkstatt fertigen Sie zwei Stücke: ein Trinkglas, eine Blumenvase oder ein Windspiel aus mundgeblasenem Glas oder einen Anhänger, der über der Flamme geformt wird (<i>Lampwork</i>). Farben und Muster wählen Sie selbst, jedes Stück ist ein Unikat. Die Frau des Meisters oder eine Mitarbeiterin der Werkstatt unterstützt Sie dabei; vorher gibt es eine Sicherheitseinweisung.","glass.jpg","fire"],
+    ["12:00","Mittagessen mit den Handwerkern","Hausgemachte Seto-Yakisoba in der Werkstatt. Die gedämpften Nudeln, vollendet in einer Brühe aus Schweinefleisch und Sojasauce, sind seit Langem das schnelle, sättigende Mittagessen der Handwerker von Seto und wurden von Japans Kulturbehörde als „100-Year Food“ ausgezeichnet."],
+    ["13:00","Vorbei an den Tongruben zur Manufaktur","Vor der Abfahrt zeigt Ihnen Ihr Guide anhand von Fotos die Orte auf Ihrer Route. Von der Hauptstraße aus sehen Sie Setos Tonabbaugebiet und besuchen dann Chikudoen, einen Familienbetrieb seit 1912, wo Handwerker jedes Stück von Hand bemalen.","chikudoen.jpg","clay"],
+    ["14:00","Ein erhaltener Kletterofen","{Z}, Erbe des Seto-Hongyo-Ofens in achter Generation, führt Sie durch das Seto-Mingei-Museum und zu einem erhaltenen Kletterofen (<i>Noborigama</i>), umgeben von Alltagsgeschirr, das Soetsu Yanagi und Bernard Leach bewunderten.","kiln.jpg","clay"],
+    ["15:00","Zwei Stücke auf der Töpferscheibe","In Tosui, einer ruhigen Galerie mit Werkstatt, leitet Sie {K}, seit über 50 Jahren an der Töpferscheibe, beim Drehen von zwei Stücken an: Teebecher, Teller, Reisschale oder kleine Schale.","pottery.jpg","clay"],
+    ["17:00","Ein besonderes Abendessen mit den Handwerkern","Die Künstler und Handwerker des Tages begleiten Sie zu einem besonderen Abendessen mit traditioneller Küche aus Seto. Zeit für die Fragen, die an der Werkbank keinen Platz hatten.","dinner.jpg","dusk"],
+    ["19:00","Zurück am Bahnhof Owari-Seto","Ihr Gastgeber bringt Sie zurück zum Bahnhof, und der Tag geht zu Ende."]]},
+  take:{h:"Was Sie mitnehmen",intro:"Vier Stücke aus Ihren eigenen Händen, jedes ein Unikat.",
+    gH:"Ihr Glas: zwei Stücke",gP:"Zwei Stücke nach Wahl: Anhänger (Lampwork), Trinkglas, Blumenvase oder Windspiel (geblasen). Farben und Muster bestimmen Sie selbst, niemand sonst auf der Welt hat dasselbe Stück.",g:["Anhänger am Lederband", "Trinkglas", "Blumenvase", "Farben und Muster nach Wahl"],bH:"Ihre Keramik: zwei Stücke, vom Ton bis zur Box",
+    ba:["Ton aus Seto, frisch aus der Grube","Auf der Scheibe geformt","Gebrannt, signiert und verpackt"],
+    items:[["Am selben Tag: Ihr Glasanhänger","Wenn Sie einen Anhänger wählen, kühlt er rechtzeitig ab und geht an einem Lederband mit Ihnen nach Hause."],
+      ["Etwa zwei Monate später: alles andere","Keramik muss trocknen und zweimal gebrannt werden. Danach werden Ihre Keramik und Ihre übrigen Glasstücke in einer Paulownia-Box mit Signatur und Siegel der Meister, verziert mit der Pinselschrift eines Kalligrafen, mit Zertifikat verpackt und per EMS verschickt."],
+      ["Für die Reise verpackt","Jede Box wird von Hand verpackt, damit sie die Reise übersteht. Bei all unseren internationalen Sendungen ist noch kein einziges Stück zerbrochen angekommen."]],
+    note:"Der Versand wird am Tourtag bar (in Yen) bezahlt und pro Karton nach Gewicht und Ziel berechnet. Alle Stücke einer Person passen in eine einzige Paulownia-Box. Einzeln verschickt ergibt sie einen Karton von etwa 5 kg; per EMS kostet das etwa 9.000–18.000 ¥. Die Boxen von zwei Personen an dieselbe Adresse passen in einen Karton; bei drei oder vier können zwei Kartons nötig sein. Sie können an beliebig viele Adressen versenden."},
+  people:{h:"Die Menschen, die Sie anleiten",intro:"Jede Station wird vom Meister dieses Handwerks geleitet, und am Abend kommen alle zum gemeinsamen Essen.",team:"{M} (Zweiter von links) und seine Frau (rechts), die normalerweise beim Glasblasen hilft und das Mittagessen kocht, mit Gästen bei Balt Kobo.",list:[["M", "Glaskünstler, Gründer von Balt Kobo", "Über 45 Jahre Glas", "Seit er 1982 in Seto Balt Kobo eröffnete, gestaltet und unterrichtet er seit über 40 Jahren Glas. Mehr als 3.000 Besucher im Jahr lernen bei ihm Glasblasen und Lampwork, und sein Ansatz, die Gäste möglichst viel mit eigenen Händen machen zu lassen, kommt besonders bei Reisenden aus dem Ausland gut an. Ab 1988 studierte er rund zwei Jahre lang Glas in Großbritannien; zurück in Seto gründete er einen Arbeitskreis und organisierte Ausstellungen und Veranstaltungen, um in der Stadt eine Glaskultur zu säen. Er hat die Anfänge der Studioglaskunst in Japan miterlebt und ist eng mit Setos Töpfern und Brennöfen verbunden. Als Ihr Gastgeber für den Tag verbindet er die Welten von Glas und Ton.", "lee.jpg"], ["K", "Keramiker, Tosui; Ehrenmitglied der Keramikvereinigung Seto", "Über 50 Jahre an der Töpferscheibe", "1974 wurde er zur Nitten-Ausstellung zugelassen. Zu seinen Auszeichnungen zählen der zweite Preis der Internationalen Keramikausstellung Chunichi (1983), Bronze beim Internationalen Keramikwettbewerb Mino (1989) und Gold bei der Itami Craft Exhibition (1991); außerdem wurde er zum Internationalen Keramikwettbewerb in Faenza, Italien, eingeladen. Heute arbeitet und unterrichtet er in seiner Werkstatt Tosui und lehrt als Vorsitzender des Ehemaligenvereins der 130 Jahre alten Keramikschule von Seto auch deren Schüler. Gäste beschreiben ihn als geduldig und ermutigend, selbst bei völligen Anfängern.", "kamei.jpg"], ["Z", "Erbe in achter Generation, Seto-Hongyo-Ofen", "Eine Töpferfamilie seit acht Generationen", "1979 in den Seto-Hongyo-Ofen hineingeboren, dessen Oberhäupter den Namen Hanjiro Mizuno tragen, lernte er bei seinem Vater, dem siebten Hanjiro. Zweimal erhielt er den Förderpreis der Ausstellung des Japanischen Volkskunstmuseums (2013, 2017) und hält Vorträge in Volkskunstmuseen in ganz Japan. 2022 eröffnete er das Seto-Mingei-Museum. Als Erzähler der Geschichte Setos führt er Sie durch das Museum und zum Kletterofen.", "mizuno.jpg"]]},
+  reviews:{h:"Was Gäste sagen",intro:"Bewertungen unserer Glasblas- und Töpferkurse von einer großen internationalen Buchungsplattform. Diese Ganztagestour ist neu und vereint beides.",label:"Übersetzung",tr:["Es war ein tolles Erlebnis! Nur wir zwei mit dem Meister und seinem Team. Auch der Versand zu unserem nächsten Hotel hat perfekt geklappt, die Gläser kamen heil an. Erstaunlich, wie viel wir selbst machen durften. Wirklich toll!","Es war eine wunderbare Erfahrung zu sehen, wie die Menschen in Seto ihre Töpfertradition bewahren und weitergeben. Sie haben die Geschichte klar erklärt und mir gezeigt, wie man verschiedene Stücke auf der Scheibe formt. Sehr zu empfehlen für alle, die sich für Keramik und diese wunderschöne Kunstform interessieren!","Wir hatten ein wirklich schönes Töpfererlebnis. Die Atmosphäre war entspannt, und unser Guide Yasu und der Meister waren fantastisch: geduldig, verständlich und sehr ermutigend. Sie haben den ganzen Ablauf einfach und angenehm gemacht, selbst für Anfänger. Absolute Empfehlung!","Wir haben es geliebt, selbst an der Töpferscheibe zu arbeiten, angeleitet von einem Meisterpaar in Seto. Unsere Stücke gefielen uns so gut, dass wir extra bezahlt haben, um alle mitzunehmen. Wir müssen ein bis zwei Monate warten, aber das ist okay. Außerdem konnten wir Originalwerke der Meister kaufen und Läden und Galerien besuchen, in denen sie ausgestellt sind. Alles in allem ein tolles Erlebnis!"],
+    glass:"Bewertungen zum Glasblasen lesen",pottery:"Bewertungen zum Töpfern lesen"},
+  price:{h:"Preis",amount:"66.000 ¥",per:"pro Person, inkl. Steuer",
+    rows:[["Gruppengröße","2–4 Personen, eine private Gruppe pro Tag (mindestens 2)"],["Kinder","Ab 6 Jahren, zum gleichen Preis wie Erwachsene. Kinder unter 6 Jahren können nicht teilnehmen, dürfen aber kostenlos mitkommen."],["Zahlung","Per PayPal innerhalb von 3 Tagen nach der Bestätigung. Der Versand wird am Tourtag bar bezahlt."]],
+    incH:"Inklusive",inc:["Glasgestaltung mit einem Meister: Glasblasen oder Lampwork (2 Stücke)","Töpfern an der Scheibe mit einem Meister (2 Stücke)","Blick auf das Tonabbaugebiet und Besuch der Manufaktur","Eintritt Seto-Mingei-Museum und Kletterofen","Hausgemachtes Mittagessen (Seto-Yakisoba)","Besonderes Abendessen mit den Handwerkern (regionale Küche)","Alle Fahrten zwischen den Stationen","Fotos und Videos Ihres Tages, per WhatsApp","Paulownia-Box mit Signatur und Siegel der Meister, mit Zertifikat"],
+    excH:"Nicht inklusive",exc:["An- und Abreise zum Bahnhof Owari-Seto","Internationaler Versand per EMS: pro Karton nach Gewicht und Ziel berechnet. Die Stücke einer Person passen in eine einzige Paulownia-Box; einzeln verschickt ergibt das einen Karton von etwa 5 kg, etwa 9.000–18.000 ¥. Bar am Tourtag zu zahlen","Persönliche Einkäufe"]},
+  offer:{h:"Eröffnungsangebot",p:"Für unsere ersten Gruppen: ein besonderes Geschenk aus Seto. Fragen Sie uns nach Details."},
+  worries:{h:"Ihre Bedenken, unsere Antworten",items:[
+    ["Ist es den Preis wert?","Alles ist inklusive: zwei Werkstätten, vier Stücke, Mittag- und Abendessen, Museumseintritt, private Fahrten, Fotos und eine Paulownia-Box mit Signatur und Siegel der Meister."],
+    ["Lohnt sich ein ganzer Reisetag?","Seto liegt etwa 40 Minuten vom Bahnhof Nagoya. Der Ablauf steht fest, und ein privates Fahrzeug bringt Sie zu jeder Station."],
+    ["Ich bin nicht handwerklich begabt. Werden meine Stücke gelingen?","Vorkenntnisse sind nicht nötig. Jeder Meister leitet Sie einzeln an und hilft Ihnen, jedes Stück richtig fertigzustellen."],
+    ["Ist Glasblasen sicher?","Sie erhalten eine Sicherheitseinweisung, unterschreiben eine Einverständniserklärung, und die Tour ist versichert. Der Meister bleibt am Ofen an Ihrer Seite."]]},
+  steps:{h:"Von der Anfrage bis zu Ihrer Haustür",items:[
+    ["Anfrage senden","Dauert etwa eine Minute; Sie erhalten sofort eine Eingangsbestätigung per E-Mail."],
+    ["Wir bestätigen die Verfügbarkeit","Wir klären alles mit den Werkstätten und antworten innerhalb von 3 Werktagen."],
+    ["Zahlung per PayPal","Nach der Bestätigung senden wir einen PayPal-Zahlungslink. Bitte zahlen Sie innerhalb von 3 Tagen, um Ihren Termin zu sichern."],
+    ["E-Mail vor der Reise","Eine Woche vorher schicken wir Treffpunkt und Packliste."],
+    ["Ihr Tag in Seto","Am Tourtag halten wir per WhatsApp Kontakt und schicken Ihnen dort auch Ihre Fotos und Videos."],
+    ["Ihre Box kommt an","Etwa zwei Monate später werden Ihre Stücke per EMS verschickt."]]},
+  know:{h:"Gut zu wissen",items:[
+    "Treffpunkt Bahnhof Owari-Seto um 10:00 Uhr. Ende am selben Ort um 19:00 Uhr.",
+    "Nur werktags. Nicht an Wochenenden und japanischen Feiertagen, einschließlich der Golden Week (Ende April bis Anfang Mai), sowie zu Obon (Mitte August) und an den Neujahrsfeiertagen (Ende Dezember bis Anfang Januar).",
+    "Anfragen sind bis 20 Tage vor dem Termin, 18:00 Uhr japanischer Zeit, möglich.",
+    "Ab 6 Jahren. Kinder müssen groß genug sein, um sicher am Ofen zu arbeiten; bitte nennen Sie uns Alter und Größe.",
+    "Tragen Sie geschlossene Schuhe und Kleidung aus Naturfasern wie Baumwolle. Sie kann etwas Ton abbekommen.",
+    "Die Tour findet bei jedem Wetter statt.",
+    "Teilen Sie uns Allergien oder vegane Ernährung bei der Buchung mit. Halal-Mahlzeiten können wir leider nicht anbieten.",
+    "Keine Hotelabholung. Zwischen den Stationen sind alle Fahrten inklusive."],
+    cxH:"Stornobedingungen",cx:[["15 oder mehr Tage vorher","Kostenlos"],["7–14 Tage vorher","20 %"],["2–6 Tage vorher","30 %"],["Am Vortag","50 %"],["Am Tourtag","100 %"]]},
+  bot:{"title": "Fragen zur Tour", "hello": "Hallo! Tippen Sie unten auf eine Frage, ich antworte sofort.", "extra": [["Was kostet die Tour?", "66.000 ¥ pro Person inkl. Steuer, für eine private Gruppe von 2–4 Personen. Der EMS-Versand Ihrer Stücke kommt hinzu und wird am Tourtag bar bezahlt."], ["Wann findet die Tour statt?", "Nur werktags, 10:00–19:00 Uhr, eine Gruppe pro Tag. Nicht an Wochenenden und japanischen Feiertagen, einschließlich der Golden Week (Ende April bis Anfang Mai), sowie zu Obon (Mitte August) und an den Neujahrsfeiertagen (Ende Dezember bis Anfang Januar). Anfragen sind bis 20 Tage vorher möglich."]], "other": "Ich habe eine andere Frage", "otherA": "Bitte senden Sie sie über das Anfrageformular und wählen Sie „Nur eine Frage“. Wir antworten innerhalb von 3 Werktagen per E-Mail.", "book": "Zum Anfrageformular", "more": "Noch etwas?", "open": "Fragen-Chat öffnen", "close": "Schließen"},
+  faq:{h:"Häufige Fragen",items:[
+    ["Brauche ich Vorkenntnisse?","Nein. Jeder Meister leitet Sie einzeln an und hilft Ihnen, Ihre Stücke fertigzustellen."],
+    ["Ist Glasblasen sicher?","In der Werkstatt wird mit Feuer, sehr heißem Glas und Werkzeug gearbeitet. Deshalb erhalten Sie vorab eine Sicherheitseinweisung und unterschreiben eine Einverständniserklärung; die Tour ist versichert. Bitte tragen Sie geschlossene Schuhe und Kleidung aus Naturfasern."],
+    ["Können Kinder teilnehmen?","Ja, ab 6 Jahren, sofern sie groß genug sind, um sicher am Ofen zu arbeiten, zum gleichen Preis wie Erwachsene. Kinder unter 6 Jahren dürfen kostenlos mitkommen."],
+    ["Was kostet der Versand?","Der Versand wird pro Karton nach Gewicht und Ziel berechnet und am Tourtag bar bezahlt. Alle Stücke einer Person passen in eine einzige Paulownia-Box; einzeln verschickt ergibt sie einen Karton von etwa 5 kg, per EMS etwa 9.000–18.000 ¥. Zwei Boxen an dieselbe Adresse passen in einen Karton; bei drei oder vier können zwei Kartons nötig sein. Sie können an beliebig viele Adressen versenden."],
+    ["Wann kommen meine Stücke an?","Keramik trocknet und wird zweimal gebrannt, das dauert etwa zwei Monate; danach wird Ihre Box per EMS verschickt. Einen Glasanhänger nehmen Sie am selben Tag mit."],
+    ["Darf ich fotografieren?","Natürlich. Zusätzlich fotografiert und filmt ein Teammitglied Ihren ganzen Tag und schickt Ihnen alles per WhatsApp."],
+    ["Was ist, wenn es regnet?","Die Tour findet bei jedem Wetter statt, und zwischen den Stationen fahren Sie mit einem privaten Fahrzeug."],
+    ["Wie komme ich zum Bahnhof Owari-Seto?","Vom Bahnhof Sakaemachi im Zentrum Nagoyas fahren Sie mit der Meitetsu-Seto-Linie bis zur Endstation Owari-Seto. Ab Bahnhof Nagoya dauert es etwa 40 Minuten. Die Linie wurde ursprünglich gebaut, um Setos Keramik zu transportieren."],
+    ["Holen Sie uns im Hotel ab?","Eine Hotelabholung ist nicht inklusive. Zwischen allen Stationen fahren Sie mit einem privaten Fahrzeug."],
+    ["Berücksichtigen Sie Ernährungswünsche?","Bei Allergien und veganer Ernährung passen wir die Mahlzeiten an, wenn Sie es bei der Buchung angeben. Halal-Mahlzeiten können wir leider nicht anbieten."],
+    ["Wie bezahle ich?","Nach der Bestätigung Ihres Termins senden wir einen PayPal-Zahlungslink; bitte zahlen Sie innerhalb von 3 Tagen. Nur der Versand wird am Tourtag bar bezahlt."],
+    ["Ich habe eine andere Frage.","Nutzen Sie das Formular unten und wählen Sie „Nur eine Frage“. Wir antworten per E-Mail."]]},
+  book:{h:"Fragen Sie Ihren Termin an",p:"Eine private Gruppe pro Tag, nur werktags. Senden Sie uns Ihren Wunschtermin; wir antworten innerhalb von 3 Werktagen.",micro:"Sie zahlen erst, wenn wir Ihren Termin bestätigt haben.",btn:"Anfrageformular öffnen",after:"Nur eine Frage? Nutzen Sie dasselbe Formular und wählen Sie „Nur eine Frage“."},
+  foot:{opH:"Konzeption und Durchführung",op:"Balt Kobo<br>3 Nakakiri-cho, Seto, Aichi 489-0042, Japan",slH:"Verkauf",sl:"Act-You Travel Co., Ltd.<br>Registriertes Reisebüro, Registrierungsnr. 1102 beim Kommissar der Japanischen Tourismusbehörde<br>HP Otsu-dori Bldg. 2F, 3-5-28 Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japan",privH:"Datenschutzhinweis",
+    priv:"Die Angaben aus dem Anfrageformular (Namen, E-Mail, Telefonnummer, Termine, Personenzahl, Ernährungswünsche, Alter und Größe von Kindern) verwenden wir ausschließlich, um Ihre Anfrage zu beantworten und Ihre Tour durchzuführen. Wir geben sie nur an die beteiligten Werkstätten und das Restaurant weiter und verkaufen sie niemals. Um Ihre Daten einzusehen oder löschen zu lassen, schreiben Sie uns.",
+    gyg:"Unsere Kurse auf einer Buchungsplattform",ig:"Instagram"}
+}};
+
+/* ============================================================
+   描画
+   ============================================================ */
+const SUPPORTED = ["ja","en","fr","de"];
+const $ = s => document.querySelector(s);
+let L = "en";
+const nm = k => L === "ja" ? NAMES[k].ja : NAMES[k].latin;
+const f = s => s.replaceAll("{M}", nm("M")).replaceAll("{K}", nm("K")).replaceAll("{Z}", nm("Z"));
+const ph = (file, tone, cls="") => `<div class="photo tone-${tone} ${cls}"><img src="images/${file}" alt="" onerror="this.remove()"><span>images/${file}</span></div>`;
+const formHref = () => CONFIG.FORM_URL || "#book";
+/* 予約ボタンはすべてGoogleフォームを別タブで開く */
+function linkCTAs(){
+  if (!CONFIG.FORM_URL) return;
+  document.querySelectorAll('a[href="#book"]').forEach(x => { x.href = CONFIG.FORM_URL; x.target = "_blank"; x.rel = "noopener"; });
+}
+
+function render(){
+  const d = C[L];
+  document.documentElement.lang = L;
+  document.title = d.title;
+  $("#nav").innerHTML = d.nav.map(([h,t]) => `<a href="${h}">${t}</a>`).join("");
+  document.querySelectorAll("[data-t]").forEach(el => el.textContent = d[el.dataset.t]);
+
+  const h = d.hero;
+  $("#hero").innerHTML = `<div class="wrap"><div>
+    <p class="kicker">${h.kicker}</p><h1>${h.h1}</h1><p class="lead">${h.lead}</p>
+    <ul class="facts">${h.facts.map(x=>`<li>${x}</li>`).join("")}</ul>
+    <a class="btn" href="#book">${d.ctaMain}</a><p class="micro">${h.micro}</p>
+    <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span>${h.rating}</span></div>
+  </div><div class="hero-photos">${ph("hero-glass.jpg","fire")}${ph("hero-pottery.jpg","clay")}</div></div>`;
+
+  $("#empathy").innerHTML = `<div class="wrap"><h2>${d.emp.h}</h2><div>${d.emp.p.map(x=>`<p>${x}</p>`).join("")}</div></div>`;
+
+  $("#story").innerHTML = `<div class="wrap"><h2>${d.story.h}</h2><div>${d.story.p.slice(0,2).map(x=>`<p>${x}</p>`).join("")}<ol class="eras">${d.story.eras.map(([a,b])=>`<li><b>${a}</b><span>${b}</span></li>`).join("")}</ol>${d.story.p.slice(2).map(x=>`<p>${x}</p>`).join("")}</div>
+    <div class="land"><figure>${ph("seto-land.jpg","clay")}<figcaption>${d.story.land}</figcaption></figure><figure>${ph("clay-works.jpg","clay")}<figcaption>${d.story.works}</figcaption></figure></div>
+    <ol class="chain">${d.story.chain.map(x=>`<li>${x}</li>`).join("")}</ol></div>`;
+
+  const v = $("#video");
+  if (CONFIG.VIDEO_EMBED_URL){
+    v.hidden = false;
+    v.innerHTML = `<div class="wrap"><h2>${d.video}</h2><div class="video-box"><iframe src="${CONFIG.VIDEO_EMBED_URL}" title="${d.video}" loading="lazy" allowfullscreen></iframe></div></div>`;
+  } else v.hidden = true;
+
+  const list = items => `<ul>${items.map(([t,s])=>`<li><b>${f(t)}</b><span>${f(s)}</span></li>`).join("")}</ul>`;
+  $("#expect").innerHTML = `<div class="wrap ew"><div><h2>${d.expect.h}</h2>${list(d.expect.items)}</div><div class="why"><h2>${d.why.h}</h2>${list(d.why.items)}</div></div>`;
+
+  $("#day").innerHTML = `<div class="wrap"><h2>${d.day.h}</h2><p class="intro">${d.day.intro}</p>
+    <div class="day-grid"><div class="sky" aria-hidden="true"><div class="ground"></div><div class="horizon"></div><div class="orb"></div><div class="clock">10:00</div><div class="now"></div></div>
+    <ol class="stops">${d.day.stops.map(([t,hh,p,img,tone])=>`<li class="stop" data-time="${t}"><time>${t}</time><div><h3>${f(hh)}</h3><p>${f(p)}</p>${img?ph(img,tone):""}</div></li>`).join("")}</ol></div></div>`;
+  initSky();
+
+  const tk = d.take, baFiles = [["clay.jpg","clay"],["shaped.jpg","clay"],["kiribako.jpg","clay"]];
+  $("#take").innerHTML = `<div class="wrap"><h2>${tk.h}</h2><p class="intro">${tk.intro}</p>
+    <h3 class="sub">${tk.gH}</h3><p class="subp">${tk.gP}</p>
+    <ul class="gal">${tk.g.map((x,i)=>`<li>${ph(["g-pendant.jpg","g-glass.jpg","g-vase.jpg","g-colors.jpg"][i],"glass")}<p>${x}</p></li>`).join("")}</ul>
+    <h3 class="sub">${tk.bH}</h3>
+    <ol class="ba">${tk.ba.map((x,i)=>`<li>${ph(...baFiles[i])}<p>${x}</p></li>`).join("")}</ol>
+    <div class="take-grid"><div>${tk.items.map(([a,b])=>`<div class="take-item"><h3>${f(a)}</h3><p>${f(b)}</p></div>`).join("")}<p class="note">${tk.note}</p></div><div class="take-photos">${ph("lee-box.jpg","clay")}${ph("packing.jpg","clay")}</div></div></div>`;
+
+  $("#artisans").innerHTML = `<div class="wrap"><h2>${d.people.h}</h2><p class="intro">${d.people.intro}</p><div class="people">
+    ${d.people.list.map(([k,role,yrs,bio,img])=>{const m=MESSAGES[k][L];return `<article class="person">${ph(img,"clay")}<h3>${nm(k)}</h3><p class="role">${role}</p><p class="years">${yrs}</p><p>${bio}</p>${m?`<blockquote>${m}</blockquote>`:""}</article>`}).join("")}</div>
+    <figure class="team">${ph("team.jpg","clay")}<figcaption>${f(d.people.team)}</figcaption></figure></div>`;
+
+  const r = d.reviews;
+  $("#reviews").innerHTML = `<div class="wrap"><h2>${r.h}</h2><p class="intro">${r.intro}</p><div class="reviews">
+    ${REVIEWS.map(([img,alt],i)=>`<article class="review"><img src="images/${img}" alt="${alt.replace(/"/g,'&quot;')}" loading="lazy">${r.tr[i]?`<p class="tr"><small>${r.label}</small>${r.tr[i]}</p>`:""}</article>`).join("")}</div>
+    ${CONFIG.SHOW_GYG_LINKS?`<div class="review-links"><a href="${CONFIG.GYG_GLASS}" target="_blank" rel="noopener">${r.glass}</a><a href="${CONFIG.GYG_POTTERY}" target="_blank" rel="noopener">${r.pottery}</a></div>`:""}</div>`;
+
+  const p = d.price;
+  $("#price").innerHTML = `<div class="wrap"><h2>${p.h}</h2><div class="price-grid"><div class="price-card">
+    <div class="amount">${p.amount}</div><div class="per">${p.per}</div>
+    <dl>${p.rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
+    <a class="btn" href="#book">${d.ctaMain}</a><p class="micro">${d.hero.micro}</p>
+    ${CONFIG.SHOW_OFFER?`<div class="offer"><b>${d.offer.h}</b>${d.offer.p}</div>`:""}</div>
+    <div class="inc"><h3>${p.incH}</h3><ul>${p.inc.map(x=>`<li>${x}</li>`).join("")}</ul><h3>${p.excH}</h3><ul>${p.exc.map(x=>`<li>${x}</li>`).join("")}</ul></div></div></div>`;
+
+  $("#worries").innerHTML = `<div class="wrap"><h2>${d.worries.h}</h2><div class="worries">${d.worries.items.map(([q,a])=>`<div class="worry"><h3>${q}</h3><p>${a}</p></div>`).join("")}</div></div>`;
+
+  $("#steps").innerHTML = `<div class="wrap"><h2>${d.steps.h}</h2><ol class="steps">${d.steps.items.map(([a,b])=>`<li><h3>${a}</h3><p>${b}</p></li>`).join("")}</ol></div>`;
+
+  const k = d.know;
+  $("#know").innerHTML = `<div class="wrap know-grid"><div><h2>${k.h}</h2><ul>${k.items.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+    <div class="cancel"><h3>${k.cxH}</h3><ul>${k.cx.map(([a,b])=>`<li><span>${a}</span><b>${b}</b></li>`).join("")}</ul></div></div>`;
+
+  $("#faq").innerHTML = `<div class="wrap"><h2>${d.faq.h}</h2>${d.faq.items.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join("")}</div>`;
+
+  const b = d.book;
+  const formPart = CONFIG.FORM_EMBED_URL
+    ? `<div class="form-frame"><iframe src="${CONFIG.FORM_EMBED_URL}" title="${b.h}" loading="lazy"></iframe></div>`
+    : `<div class="form-fallback"><a class="btn" href="${formHref()}" ${CONFIG.FORM_URL?'target="_blank" rel="noopener"':''}>${b.btn}</a></div>`;
+  $("#book").innerHTML = `<div class="wrap"><div class="head"><h2>${b.h}</h2><p>${b.p}</p><p class="micro">${b.micro}</p></div>${formPart}<p class="after">${b.after}</p></div>`;
+
+  const ft = d.foot;
+  $("#footer").innerHTML = `<div class="wrap"><div class="foot-grid">
+    <div class="orgs"><div><h3>${ft.opH}</h3><p>${ft.op}<br><a href="mailto:${CONFIG.EMAIL}">${CONFIG.EMAIL}</a><br><a href="tel:${CONFIG.TEL_LINK}">${L==="ja"?CONFIG.TEL_JP:CONFIG.TEL_INTL}</a></p></div><div><h3>${ft.slH}</h3><p>${ft.sl}<br><a href="tel:${CONFIG.SELLER_TEL_LINK}">${L==="ja"?CONFIG.SELLER_TEL_JP:CONFIG.SELLER_TEL_INTL}</a></p></div></div>
+    <div><details><summary>${ft.privH}</summary><p>${ft.priv}</p></details>
+      <div class="links">${CONFIG.SHOW_GYG_LINKS?`<a href="${CONFIG.GYG_GLASS}" target="_blank" rel="noopener">${ft.gyg}</a>`:""}${CONFIG.SHOW_INSTAGRAM?`<a href="${CONFIG.INSTAGRAM_URL}" target="_blank" rel="noopener">${ft.ig}</a>`:""}</div></div>
+    </div><p class="copy">© Balt Kobo</p></div>`;
+
+  document.querySelectorAll(".langs button").forEach(x => x.setAttribute("aria-pressed", x.dataset.lang === L ? "true" : "false"));
+  try{ localStorage.setItem("seto_lang", L); }catch(e){}
+  watchMbar();
+  linkCTAs();
+  if (typeof BOT !== 'undefined') BOT.reset();
+}
+
+/* 空と時計 */
+const SKY = {
+  "10:00":["#CFE0E3","#2E2B28",12,38,"#F6EBC8","rgba(246,235,200,.6)"],
+  "10:15":["#D3E2E2","#2E2B28",18,46,"#F6EBC8","rgba(246,235,200,.6)"],
+  "10:30":["#D8E3DE","#2E2B28",25,54,"#F5E6B8","rgba(245,230,184,.6)"],
+  "12:00":["#E6E4D2","#2E2B28",45,66,"#F7E3A4","rgba(247,227,164,.65)"],
+  "13:00":["#E7DDBE","#2E2B28",55,64,"#F4D98E","rgba(244,217,142,.65)"],
+  "14:00":["#E5D1A6","#2E2B28",64,58,"#F0CB78","rgba(240,203,120,.65)"],
+  "15:00":["#DDB98A","#2E2B28",72,50,"#ECB15E","rgba(236,177,94,.65)"],
+  "17:00":["#9D5E4A","#F4EDE6",85,33,"#E9864B","rgba(233,134,75,.7)"],
+  "19:00":["#2C3448","#E9ECF2",22,62,"#E8E6DA","rgba(232,230,218,.35)"]
+};
+let skyIO;
+function initSky(){
+  const sky = $(".sky"), clock = sky.querySelector(".clock"), now = sky.querySelector(".now");
+  const set = stop => {
+    const t = stop.dataset.time, s = SKY[t];
+    document.querySelectorAll(".stop").forEach(x => x.classList.toggle("is-active", x === stop));
+    clock.textContent = t; now.textContent = stop.querySelector("h3").textContent;
+    [["--sky",s[0]],["--sky-ink",s[1]],["--ox",s[2]+"%"],["--oy",s[3]+"%"],["--orb",s[4]],["--orb-glow",s[5]]].forEach(([k,v])=>sky.style.setProperty(k,v));
+  };
+  if (skyIO) skyIO.disconnect();
+  skyIO = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && set(e.target)), {rootMargin:"-45% 0px -50% 0px"});
+  const stops = document.querySelectorAll(".stop");
+  stops.forEach(s => skyIO.observe(s));
+  set(stops[0]);
+}
+
+/* スマホ下部の予約ボタン */
+let mIO;
+function watchMbar(){
+  const bar = $(".mbar"), vis = new Set();
+  if (mIO) mIO.disconnect();
+  mIO = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? vis.add(e.target) : vis.delete(e.target)); bar.classList.toggle("hide", vis.size > 0); });
+  mIO.observe($("#hero")); mIO.observe($("#book"));
+}
+
+
+/* ============================================================
+   よくある質問チャットボット（FAQの内容から自動で作成）
+   ============================================================ */
+const BOT = (() => {
+  const box = $("#bot"), log = box.querySelector(".bot-log"), chips = box.querySelector(".bot-chips"), btn = $(".bot-btn");
+  const esc = t => t;
+  const qa = () => { const d = C[L]; return d.bot.extra.concat(d.faq.items.slice(0, -1)); };
+  const say = (t, who) => { const m = document.createElement("div"); m.className = "msg " + who; m.innerHTML = t; log.appendChild(m); log.scrollTop = log.scrollHeight; return m; };
+  const drawChips = () => {
+    const d = C[L].bot;
+    chips.innerHTML = "";
+    qa().forEach(([q, a]) => { const b = document.createElement("button"); b.type = "button"; b.textContent = q; b.onclick = () => { const u = say(q, "u"); say(f(a), "b"); log.scrollTop = u.offsetTop - 12; }; chips.appendChild(b); });
+    const o = document.createElement("button"); o.type = "button"; o.className = "alt"; o.textContent = d.other;
+    o.onclick = () => { const u = say(d.other, "u"); const m = say(d.otherA, "b"); const a = document.createElement("a"); a.className = "btn"; a.href = formHref(); if (CONFIG.FORM_URL) { a.target = "_blank"; a.rel = "noopener"; } a.textContent = d.book; a.onclick = () => close(); m.appendChild(document.createElement("br")); m.appendChild(a); log.scrollTop = u.offsetTop - 12; };
+    chips.appendChild(o);
+  };
+  const reset = () => {
+    const d = C[L].bot;
+    box.querySelector(".bot-title").textContent = d.title;
+    box.setAttribute("aria-label", d.title);
+    box.querySelector(".bot-x").setAttribute("aria-label", d.close);
+    btn.setAttribute("aria-label", d.open);
+    log.innerHTML = ""; say(d.hello, "b"); drawChips();
+  };
+  const open = () => { box.hidden = false; btn.setAttribute("aria-expanded", "true"); };
+  const close = () => { box.hidden = true; btn.setAttribute("aria-expanded", "false"); btn.focus(); };
+  btn.onclick = () => box.hidden ? open() : close();
+  box.querySelector(".bot-x").onclick = close;
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
+  return { reset };
+})();
+document.querySelectorAll(".langs button").forEach(x => x.addEventListener("click", () => { L = x.dataset.lang; render(); }));
+(function(){
+  const q = new URLSearchParams(location.search).get("lang");
+  let s = null; try{ s = localStorage.getItem("seto_lang"); }catch(e){}
+  const nav = (navigator.language || "en").slice(0,2).toLowerCase();
+  L = [q, s, nav].find(x => SUPPORTED.includes(x)) || "en";
+  render();
+  BOT.reset();
+})();
+</script>
+</body>
+</html>
